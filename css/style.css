@@ -4,7 +4,7 @@ body, html {
 	  font-color: black;
 	  font-family: 'Roboto', sans-serif;
 	  margin: 0em;
-	  font-size: 16px;
+	  font-size: 100px;
 }
 
 p {
@@ -48,7 +48,7 @@ img {
 	}
 
 	.textContent {
-		font-size:16px;
+		font-size:100px;
 	}
 
 	
