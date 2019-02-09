@@ -31,7 +31,7 @@ img {
 	  background-image: url("res-lines.png");
 
 	  /* Full height */
-	  height: 4%; 
+	  height: 10%; 
 
 	  /* Create the parallax scrolling effect */
 	  background-attachment: fixed;
