@@ -884,7 +884,9 @@ footer p {
     transition: .5s ease;
     opacity: 1;
 }
-
+#insta_hide {
+    height: 32px;
+}
 .hide {
     z-index: 1;
     margin-bottom: 20px;
