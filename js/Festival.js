@@ -25,7 +25,7 @@ $(document).ready(function(){
     });
   }, 500);
 
-  $('.pop').each(function() {
+  $('.pop').each(function() { 
     $(this).on('click', function() {
       var target = '#' + $(this).attr('tar');
       $(target).addClass('opened');
