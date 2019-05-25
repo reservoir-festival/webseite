@@ -11,7 +11,6 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
-    <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="slick/slick.js"></script>
     <script type="text/javascript" src="js/Festival.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
@@ -1552,7 +1551,7 @@
                 <p class="fat_green">Ticketing starts at June 1st, 2019</p>
                 <!-- </a> -->
             </div>
-            <span class="fat_white german">20. Juli, 2019 - Linachtalsperre</span>
+            <span class="fat_white german">20. Juli, 2019 – Linachtalsperre</span>
             <div class="welcome_text german">
                 <br><br>
                 <p class="landing">
@@ -1615,8 +1614,8 @@
 
         <br />
         </p>
-        <img class="sperre" src="img/Pressebild.jpg" />
-        <img class="sperre_mobile" src="img/sperre_mobile.jpeg" />
+        <img class="sperre" id="sperrepc" src="img/Pressebild.jpg" />
+        <img class="sperre_mobile" id="sperremobile" src="img/sperre_mobile.jpeg" />
         <!-- <div class="fade"></div> -->
         <div class="content">
 
@@ -1888,9 +1887,9 @@
 
                     </p>
                     <p>
-                        <a href="http://www.hs-furtwangen.de" target="_blank"><img class="hfu" src="img/hfu_logo.png"
+                        <a href="http://www.hs-furtwangen.de" target="_blank"><img class="partner-logo" src="img/hfu_logo.png"
                                 alt="Hochschule Furtwangen" /></a>
-                        <a href="https://global-forest.com" target="_blank"><img class="hfu"
+                        <a href="https://global-forest.com" target="_blank"><img class="partner-logo global-forest"
                                 src="img/Logo_GlobalForest.png" alt="Global Forest " /></a>
                     </p>
                 </div>
@@ -2047,8 +2046,11 @@
                 </div>
             </div>
             <div class="footer_menu english">
-                <p>
-                    <span class="lightgray pop" tar="one">Disclaimer</span><br /></p>
+                <p><span class="lightgray pop" tar="one">Disclaimer</span></p>
+                <p><span class="lightgray pop" tar="two">Accountability for links</span></p>
+                <p><span class="lightgray pop" tar="three">Copyright ©</span></p>
+            </div>
+            <div class="popup_container english">
                 <div class="popup" id="one">
                     <p>
                         <b>DISCLAIMER</b><br />
@@ -2064,8 +2066,6 @@
                         unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).<br />
                     </p>
                 </div>
-                <p>
-                    <span class="lightgray pop" tar="two">Accountability for links</span><br /></p>
                 <div class="popup" id="two">
                     <p>
                         <b>ACCOUNTABILITY FOR LINKS</b><br />
@@ -2075,8 +2075,6 @@
                         known to us, we will remove the respective link immediately.<br />
                     </p>
                 </div>
-                <p>
-                    <span class="lightgray pop" tar="three">Copyright ©</span></p>
                 <div class="popup" id="three">
                     <p>
                         <b>COPYRIGHT</b><br />
@@ -2092,8 +2090,11 @@
             </div>
 
             <div class="footer_menu german">
-                <p>
-                    <span class="lightgray pop" tar="oneg">Haftungsausschluss</span><br /></p>
+                <p><span class="lightgray pop" tar="oneg">Haftungsausschluss</span></p>
+                <p><span class="lightgray pop" tar="twog">Verantwortlichkeit für Links</span></p>
+                <p><span class="lightgray pop" tar="threeg">Urheberrechte ©</span></p>
+            </div>
+            <div class="popup_container german">
                 <div class="popup" id="oneg">
                     <p>
                         <b>HAFTUNGSAUSCHLUSS</b><br />
@@ -2110,8 +2111,6 @@
                         unberührt.<br />
                     </p>
                 </div>
-                <p>
-                    <span class="lightgray pop" tar="twog">Verantwortlichkeit für Links</span><br /></p>
                 <div class="popup" id="twog">
                     <p>
                         <b>VERANTWORTLICHKEIT FÜR LINKS</b><br />
@@ -2121,8 +2120,6 @@
                         Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br />
                     </p>
                 </div>
-                <p>
-                    <span class="lightgray pop" tar="threeg">Urheberrechte ©</span></p>
                 <div class="popup" id="threeg">
                     <p>
                         <b>URHEBERRECHTE</b><br />
