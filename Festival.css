@@ -8,7 +8,61 @@ body {
     background-color: white;
     overflow-x: hidden;
 }
-
+.iconB {
+    position: absolute; 
+    top: 6%;
+    left: 96%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 5px;
+    cursor: pointer;
+}
+.hamburger {
+    width: 30px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: 6%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+.hamburger:before,
+.hamburger:after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: #000;
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+    transition: .5s;
+}
+.hamburger:before{
+    top: -10px;
+}
+.hamburger:after{
+    top: 10px;
+}
+.iconB.active .hamburger {
+    background: rgba(0,0,0,0);
+    box-shadow: 0 2px 2px rgba(0,0,0,0);
+    top: 0;
+}
+/* unterer Strich  */
+.iconB.active .hamburger:before{
+    transform: rotate(45deg);
+    top: 0;
+    background-color: red;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+/* oberer strich */
+.iconB.active .hamburger:after{
+    transform: rotate(135deg);
+    top: 0;
+    background-color: red;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0);
+}
 *:focus {
     outline: none;
 }
@@ -96,7 +150,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #eec300;
+  background-color: #888;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -114,11 +168,11 @@ body {
 }
 
 input:checked + .select {
-  background-color: #1063e6;
+  background-color: #888;
 }
 
 input:focus + .select {
-  box-shadow: 0 0 1px #1063e6;
+  box-shadow: 0 0 1px #888;
 }
 
 input:checked + .select:before {
@@ -405,7 +459,7 @@ input:checked + .select:before {
     content: "";
     position: absolute;
     bottom: 0;
-    background-color: rgb(128, 0, 255);
+    background-color: white;
     height: 1px;
     right: 103%;
     left: -3%;
@@ -429,7 +483,7 @@ input:checked + .select:before {
     padding: 9px 7px;
     margin: 20px;
     width: 27px;
-    height: auto;
+    height: 24px;
     border: solid 1px rgb(115, 106, 131);
     transition: .5s ease;
 }
@@ -506,12 +560,14 @@ input:checked + .select:before {
 }
 
 .fade {
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 100%);
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 100%);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.3) 32%, rgba(0, 0, 0, 1) 42%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.3) 32%, rgba(0, 0, 0, 1) 42%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0.3) 32%, rgba(0, 0, 0, 1) 42%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
     position: absolute;
     margin-top: -4px;
+    margin-left: -15px;
+    left: 15px;
 }
 
 .sperre,
@@ -741,7 +797,7 @@ input:checked + .select:before {
 }
 
 footer {
-    color: #eee;
+    color: white;
     /*  padding: 40px 30px 30px 0px;*/
     position: relative;
     overflow: hidden;
@@ -766,7 +822,7 @@ footer p {
 }
 
 .pop:hover {
-    color: purple;
+    color: white;
 }
 
 .overlay {
@@ -793,8 +849,8 @@ footer p {
     border-radius: 22px;
     padding: 4px 11px;
     font-size: 1.8rem;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin-top: 268px;
+    margin-right: 140px;
     font-family: sans-serif;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
 }
@@ -918,7 +974,7 @@ img#insta_hide {
     position: absolute;
     width: 100%;
     height: auto;
-    background-color: rgb(15, 0, 37);
+    background-color: black;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1143,6 +1199,15 @@ img#insta_hide {
     #sSix {
         left: 500px;
     }
+    .iconB {
+        left: 87%;
+    }
+    .close {
+        display: none;
+    }
+    .fade {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1322,6 +1387,7 @@ img#insta_hide {
         padding-right: 10px;
     }
     .close {
+        display: none;
         margin-top: 0px;
         margin-right: 0px;
     }
