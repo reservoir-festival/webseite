@@ -1082,6 +1082,7 @@ img#insta_hide {
         display: none;
     }
     .popup {
+        position: absolute;
         bottom: 0;
     }
 }
