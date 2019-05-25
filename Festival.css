@@ -67,7 +67,7 @@ body {
     align-items: center;
     width: 200px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .language img {
     margin: 10px;
@@ -198,7 +198,6 @@ input:checked + .select:before {
 }
 
 .welcome {
-    padding-left: 15px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -350,7 +349,7 @@ input:checked + .select:before {
 .link {
     padding-bottom: 3px;
     text-decoration: none;
-    color: rgb(128, 0, 255);
+    color: #111;
     position: relative;
     font-weight: 600;
 }
@@ -392,7 +391,6 @@ input:checked + .select:before {
 
 .link:hover:after {
     right: -3%;
-
 }
 
 .link:after {
@@ -401,7 +399,7 @@ input:checked + .select:before {
     content: "";
     position: absolute;
     bottom: 0;
-    background-color: rgb(128, 0, 255);
+    background-color: #111;
     height: 1px;
     right: 103%;
     left: -3%;
@@ -487,9 +485,11 @@ input:checked + .select:before {
     font-weight: 600;
 
 }
+
 /* .fat_green:hover {
     font-size: 1.1em;
 } */
+
 .fat_green {
     font-weight: 600;
     color: black;
@@ -497,8 +497,10 @@ input:checked + .select:before {
     background-color: rgba(137, 232, 77, 0.5);
     border: 2px solid rgb(45, 113, 2);
     position: absolute;
-    left: 672px;
+    left: 50%;
+    transform: translateX(-50%);
     box-shadow: 0 0px 20px rgba(0,15,0,0.25);
+    text-align: center;
 }
 
 .fade {
@@ -780,21 +782,25 @@ footer p {
     transition: opacity 0.5s ease;
 }
 
+.popup_container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .popup {
-    width: 70% !important;
-    height: auto !important;
-    opacity: 0;
-    padding: 0px 30px;
-    overflow: hidden;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    border-radius: 10px;
-    transition: opacity 0.5s ease;
-    pointer-events: none;
-    color: #ddd;
+  position: absolute;
+  bottom: 0;
+  width: 80% !important;
+  height: auto !important;
+  opacity: 0;
+  padding: 10%;
+  overflow: hidden;
+  z-index: 10;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  color: #ddd;
 }
 
 .opened {
@@ -907,7 +913,7 @@ img#insta_hide {
         font-size: 2.2rem;
     }
     .fat_green {
-        left: 500px;
+        /*left: 500px;*/
     }
     #sThree {
         left: 200px;
@@ -937,7 +943,7 @@ img#insta_hide {
         font-size: 2.2rem;
     }
     .fat_green {
-        left: 460px;
+        /*left: 460px;*/
     }
     #sThree {
         left: 500px;
@@ -969,7 +975,7 @@ img#insta_hide {
         font-size: 2.2rem;
     }
     .fat_green {
-        left: 400px;
+        /*left: 400px;*/
     }
     #sThree {
         top: -1500px;
@@ -1009,7 +1015,7 @@ img#insta_hide {
         background-color: rgba(0,0,0,0.5);
     }
     .fat_green {
-        left: 370px;
+        /*left: 370px;*/
     }
     #sEight {
         left: 950px;
@@ -1031,7 +1037,7 @@ img#insta_hide {
         padding: 5px;
     }
     .fat_green {
-        left: 300px;
+        /*left: 300px;*/
     }
     #sThree {
         top: -1350px;
@@ -1082,8 +1088,6 @@ img#insta_hide {
         display: none;
     }
     .popup {
-        position: absolute;
-        bottom: 0;
     }
 }
 
@@ -1092,11 +1096,11 @@ img#insta_hide {
         font-size: 1.2rem;
         background-color: rgba(0,0,0,0.5);
         margin-top: 245px;
-        margin-right: 15px;
+        margin-right: 0px;
         margin-left: 0px;
     }
     .fat_green {
-        left: 270px;
+        /*left: 270px;*/
     }
     #sFour {
         left: 700px;
@@ -1120,11 +1124,12 @@ img#insta_hide {
         font-size: 1.2rem;
         background-color: rgba(0,0,0,0.5);
         margin-top: 450px;
-        margin-right: 15px;
+        margin-right: 0px;
         margin-left: 0px;
     }
     .fat_green {
-        left: 15px;
+        width: 95%;
+        /*left: 15px;*/
     }
     .fat_green:hover {
         font-size: 1em;
@@ -1156,17 +1161,18 @@ img#insta_hide {
        width: 30px;
        height: 30px;
        padding: 10px;
-       border-top-left-radius: 25px;
-       border-bottom-left-radius: 25px;
+       border-top-left-radius: 20px;
+       border-bottom-left-radius: 20px;
    }
-  .pdf_container {
-  padding: 10px 20px;
-  border-bottom-left-radius: 20px;
- } 
-   .pdf,
    .pdf_container {
-   background-color: rgba(250, 250, 250, 0.8);
-   }
+      padding: 10px 20px;
+      border-bottom-left-radius: 20px;
+    } 
+    .pdf,
+    .pdf_container {
+      background-color: rgba(200, 200, 200, 0.8);
+    }
+
     .content {
         padding: 15px;
     }
