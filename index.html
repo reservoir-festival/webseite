@@ -12,27 +12,25 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
     <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/Festival.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
     <script type="text/javascript">
         $(document).ready(function () {
-                    $('.iconB').click(function () {
-                        $('.iconB').toggleClass('active');
-                    })
-                    // $('.iconB').active(function(){
-                        
-                    // }
-                    // )
-                })
+            $('.iconB').click(function () {
+                $('.iconB').toggleClass('active');
+            })
+            // $('.iconB').active(function(){
+
+            // }
+            // )
+        })
     </script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="Festival.css">
 </head>
 
 <body>
-    <!-- <div class="iconB">
-        <div class="hamburger"></div>
-    </div> -->
     <div class="overlay"><span class="close">X</span></div>
     <!-- <div class="loading" class="full_content">
         <div class="loading_screen">
@@ -1530,7 +1528,7 @@
                             points="747.99 512.61 725.2 500.2 749.89 498.94 772.68 511.35 747.99 512.61" />
                     </g>
                 </svg></div>
-            
+
             <span class="fat_white english">July 20th, 2019 - Linach Dam</span>
             <div class="welcome_text english">
                 <br><br>
@@ -1573,7 +1571,13 @@
         </div>
 
         <div class="info english">
-            <div class="pdf"><img src="img/info.svg" /></div>
+            <div class="pdf">
+                <!-- <img src="img/info.svg" /> -->
+                <div class="iconB">
+                    <div class="hamburger">
+                    </div>
+                </div>
+            </div>
             <div class="pdf_container">
                 <!-- <p><a class="link" href="ReservoirFestival2019EN.pdf" target="_blank">Program</a>
                 </p> -->
@@ -1593,7 +1597,12 @@
         </div>
 
         <div class="info german">
-            <div class="pdf"><img src="img/info.svg" /></div>
+            <div class="pdf">
+                <!-- <img src="img/info.svg" /> -->
+                <div class="iconB">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
             <div class="pdf_container">
                 <!-- <p><a class="link" href="ReservoirFestival2019EN.pdf" target="_blank">Programm</a>
                 </p> -->
@@ -1850,7 +1859,7 @@
                     Helper Helper</p>
             </div>
         </div> -->
-    
+
         <footer>
             <div id="particles-js"></div>
             <div class="footer_container">
@@ -1887,8 +1896,8 @@
 
                     </p>
                     <p>
-                        <a href="http://www.hs-furtwangen.de" target="_blank"><img class="partner-logo" src="img/hfu_logo.png"
-                                alt="Hochschule Furtwangen" /></a>
+                        <a href="http://www.hs-furtwangen.de" target="_blank"><img class="partner-logo"
+                                src="img/hfu_logo.png" alt="Hochschule Furtwangen" /></a>
                         <a href="https://global-forest.com" target="_blank"><img class="partner-logo global-forest"
                                 src="img/Logo_GlobalForest.png" alt="Global Forest " /></a>
                     </p>
