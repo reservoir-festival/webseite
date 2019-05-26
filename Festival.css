@@ -17,6 +17,18 @@ body {
     height: 33px;
     cursor: pointer;
 }
+#mobburger {
+    display: none;
+}
+#pcburger {
+    display: block;
+}
+#mobicon {
+    display: none;
+}
+#pcicon {
+    display: block;
+}
 .hamburger {
     width: 30px;
     height: 5px;
@@ -1180,6 +1192,18 @@ img#insta_hide {
         display: none;
     }
     .fade {
+        display: none;
+    }
+    #mobburger {
+        display: block;
+    }
+    #pcburger {
+        display: none;
+    }
+    #mobicon {
+        display: block;
+    }
+    #pcicon {
         display: none;
     }
 }
