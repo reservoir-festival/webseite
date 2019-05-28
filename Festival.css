@@ -777,6 +777,7 @@ input:checked + .select:before {
     margin-bottom: 20px;
     margin-right: 20px;
     transition: .5s ease;
+    z-index: 2;
     /* background: rgba(255,255,255,0.1);
     border-radius: 11px; */
 }
@@ -1186,7 +1187,9 @@ img#insta_hide {
         left: 500px;
     }
     .iconB {
-        left: 87%;
+        /*left: 87%;*/
+        top: 27px;
+        left: 30px;
     }
     .close {
         display: none;
@@ -1194,11 +1197,38 @@ img#insta_hide {
     .fade {
         display: none;
     }
+<<<<<<< HEAD
+    /*#mobburger {
+=======
     #mobburger {
+>>>>>>> ec983cb0b2815060ddd94897dc4c8c0be6d4b12a
         display: block;
     }
     #pcburger {
         display: none;
+<<<<<<< HEAD
+    }*/
+    .hamburger {
+        display: block;
+    }
+    .hamburger {
+        width: 25px;
+        height: 4px;
+    }
+    .hamburger:after, .hamburger:before {
+        width: 25px;
+        height: 4px;
+    }
+    .hamburger:after {
+        top: 8px;
+    }
+    .hamburger:before {
+        top: -8px;
+    }
+    /*#pcicon {
+        display: none;
+    }*/
+=======
     }
     #mobicon {
         display: block;
@@ -1206,6 +1236,7 @@ img#insta_hide {
     #pcicon {
         display: none;
     }
+>>>>>>> ec983cb0b2815060ddd94897dc4c8c0be6d4b12a
 }
 
 @media screen and (max-width: 768px) {
