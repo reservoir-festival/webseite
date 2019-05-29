@@ -12,7 +12,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
     <script type="text/javascript" src="slick/slick.js"></script>
-    <script type="text/javascript" src="js/particles.min.js"></script>
+    <!-- <script type="text/javascript" src="js/particles.min.js"></script> -->
     <script type="text/javascript" src="js/Festival.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"></script> -->
     <script type="text/javascript">
@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
     <link rel="stylesheet" type="text/css" href="Festival.css">
 </head>
+
 
 <body>
     <div class="overlay"><span class="close">X</span></div>
@@ -1546,7 +1547,7 @@
                     of a festival for electric, electronic and digital arts.
                 </p>
                 <!-- <a href="#" target="_blank"> -->
-                <p class="fat_green">Ticketing starts at June 1st, 2019</p>
+                <p class="fat_green " tar="tickets">Ticketing starts at June 1st, 2019</p>
                 <!-- </a> -->
             </div>
             <span class="fat_white german">20. Juli, 2019 – Linachtalsperre</span>
@@ -1564,10 +1565,17 @@
                     Kulisse und Ressource eines Festivals für elektrische, elektronische und digitale Künste.
                 </p>
                 <!-- <a href="https://webuser.hs-furtwangen.de/~grundmae/Soon/" target="_blank"> -->
-                <p class="fat_green">Tickets gibt es ab dem 01. Juni 2019</p>
+                <p class="fat_green " tar="tickets">Tickets gibt es ab dem 01. Juni 2019</p>
+
                 <!-- </a> -->
             </div>
 
+        </div>
+        <div class="popup" id="tickets">
+            <iframe id="dgbrt-ticket-frame"
+                style="overflow: auto; overflow-x: hidden !important; overflow-y: scroll; border: 0px; height: 800px; width: 100%; background: transparent;"
+                src="https://cdn.csone.dgbrt.de/static-shopframe/event/89.html#channel=Festival%20Reservoir">
+            </iframe>
         </div>
 
         <div class="info english">
@@ -1579,8 +1587,8 @@
                 </div>
             </div>
             <div class="pdf_container">
-                <!-- <p><a class="link" href="ReservoirFestival2019EN.pdf" target="_blank">Program</a>
-                </p> -->
+                <p><a class="link" href="img/Programm_en.pdf" target="_blank">Program</a>
+                </p>
                 <p>
                     <a class="link" href="img/Lageplan.pdf" target="_blank">Plan</a>
                 </p>
@@ -1598,18 +1606,18 @@
 
         <div class="info german">
             <div class="pdf" id="mobicon">
-                <div class="iconB" ></div>
+                <div class="iconB"></div>
                 <div class="hamburger" id="mobburger"></div>
                 <!-- <img src="img/info.svg" /> -->
             </div>
             <div class="pdf" id="pcicon">
-                <div class="iconB" >
+                <div class="iconB">
                     <div class="hamburger" id="pcburger"></div>
                 </div>
             </div>
             <div class="pdf_container">
-                <!-- <p><a class="link" href="ReservoirFestival2019EN.pdf" target="_blank">Programm</a>
-                </p> -->
+                <p><a class="link" href="img/Programm_ger.pdf" target="_blank">Programm</a>
+                </p>
                 <p>
                     <a class="link" href="img/Lageplan.pdf" target="_blank">Lageplan</a>
                 </p>
@@ -1667,6 +1675,158 @@
                 </p>
             </div>
 
+            <div class="artist_container german">
+                <div class="headline_art">
+                    <h3>Hier eine erste Vorschau der vertretenen Künstler:</h3>
+                </div>
+                <div class="artist">
+                    <div class="art_img pic_left"><img class="artist_img " id="monica" src="img/MonicaVlad.png"
+                            alt="Monica Vlad" /></div>
+                    <p class="art_text text_right">
+                        Monica Vlad ändert die Funktionalität alter Mediengeräte und Alltagsgegenstände, um neue Klänge
+                        zu erzeugen. Sie kombiniert die erstaunlichen Klangstrukturen und scheinbar unendlichen
+                        Möglichkeiten des Noise-Genres mit Klängen aus anderen Genres wie klassischer Musik zu einem
+                        „Paradoxon“
+                        Soundscape. “Ihre Live-Auftritte sind jedes Mal anders, aber immer intensiv, dramatisch und
+                        kraftvoll.
+
+                        <span class="display_no_mobile"><br />Die Performance „Lost, but not lost forever (Verloren,
+                            aber nicht für immer verloren)“ ist ein
+                            medienarchäologisches Projekt,
+                            das vertraute Objekte in außergewöhnliche Instrumente verwandelt. Das Ergebnis ist eine live
+                            analoge Klangkomposition.
+                            Die Idee ist, den Vorgang des digitalen Abspielens von Loops mit Hilfe der beliebten
+                            Ableton-Software nachzubilden, jedoch ohne Computer. Die vom Künstler gewählte Lösung
+                            bestand
+                            darin, die Loops physisch auf analogen Kassetten zu reproduzieren. Sie bilden die Grundlage
+                            dieser Leistung.
+                        </span>
+                    </p>
+                </div>
+                <div class="artist">
+                    <div class="art_img pic_right"><img class="artist_img " id="jasmine" src="img/JasmineGuffond.jpg"
+                            alt="Jasmine Guffond" /></div>
+                    <p class="art_text text_left">
+                        Jasmine Guffond ist eine Musikerin, Künstlerin und Komponistin, die an der Schnittstelle
+                        zwischen sozialer, politischer und technischer Infrastruktur arbeitet. Ihre Praxis konzentriert
+                        sich auf elektronische Komposition in Musik- und Kunstkontexten und umfasst Live-Performance,
+                        Aufnahme, Klanginstallation und maßgeschneidertes Browser-Plugin. Durch die Sonifikation von
+                        Daten thematisiert sie das Potenzial von Sound, sich mit aktuellen politischen Fragen
+                        auseinanderzusetzen. 
+                        <span class="display_no_mobile">In den letzten Projekten wurden digitale
+                            Technologien, Sonifikation und die Ästhetisierung von Daten eingesetzt, um die Diskussion
+                            über zeitgenössische Überwachungstechnologien zu fördern und experimentelle Audioarbeiten zu
+                            produzieren. Sie hat international ausgestellt und live gespielt und Musik für die Labels
+                            Staubgold, Sonic Pieces und Karlrecords aufgenommen. Ihre Musik greift auf Einflüsse aus
+                            experimenteller Elektronik, Drohne, Techno und Avantgarde zurück. Sie arbeitet sowohl mit
+                            abstraktem Klang als auch mit traditionellen Musikformen und übersetzt Daten in tief
+                            greifende Kompositionen. Für das Reservoir Festival wird Jasmine ihre Musik live aufführen
+                            und ein neues Klangwerk für einen der Bögen am Linacher Staudamm schaffen.
+                        </span>
+                    </p>
+                </div>
+                <div class="artist">
+                    <div class="art_img pic_left"><img class="artist_img " id="simon" src="img/SimonWhetham.jpg"
+                            alt="Simon Whetham" /></div>
+                    <p class="art_text text_right">
+                        <span class="display_no_mobile">Seit 2005 hat </span>Simon Whetham <span
+                            class="display_no_mobile">eine Praxis entwickelt, mit Schallaktivität als Rohmaterial für
+                            die
+                            Schöpfung zu arbeiten. Er </span>verwendet Umgebungsgeräusche und wendet eine Vielzahl von
+                        Methoden und
+                        Techniken an, um oft unbemerkte und verdeckte Schallphänomene zu erhalten. Bei der Präsentation
+                        von Werken in einer Performance oder Installation werden für ihn der Raum und die darin
+                        enthaltenen Objekte zu Instrumenten zum Spielen. <span class="display_no_mobile">
+                            Seine künstlerischen Untersuchungen haben ihn veranlasst, zunehmend in multidisziplinären
+                            Projekten zu arbeiten, wodurch seine Arbeit sichtbarer und greifbarer wurde. Derzeit
+                            erforscht
+                            er Möglichkeiten, um physische Spuren von Schall zu bewahren und Energieformen zu
+                            transformieren.
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="artist_container english">
+                <div class="headline_art">
+                    <h3>The first preview of the represented artists:</h3>
+                </div>
+                <div class="artist">
+                    <div class="art_img"><img class="artist_img pic_left" id="monica" src="img/MonicaVlad.png"
+                            alt="Monica Vlad" /></div>
+                    <p class="art_text text_right">
+
+                        Monica Vlad changes the functionality of old media devices and everyday objects to create
+                        new
+                        sounds. She combines the astonishing sound textures and seemingly endless possibilities of
+                        the
+                        noise genre with sounds from opposite genres such as classical music to create a “paradox
+                        soundscape.” Her live performances are different each time, but always intense, dramatic and
+                        powerful.
+                        <span class="display_no_mobile">
+                            <br />
+                            The performance “Lost, but not lost forever” is a media archeology project that transforms
+                            familiar objects into extraordinary instruments. The result is a live analog sound
+                            composition.
+                            The idea is to recreate the act of playing loops digitally with the help of the popular
+                            Ableton
+                            software, but without a computer. The solution the artist chose was to reproduce the loops
+                            physically on analog cassettes. They form the basis of this performance.
+                        </span>
+                    </p>
+                </div>
+                <div class="artist">
+                    <div class="art_img"><img class="artist_img pic_right" id="jasmine" src="img/JasmineGuffond.jpg"
+                            alt="Jasmine Guffond" /></div>
+                    <p class="art_text text_left">
+                        Jasmine Guffond is a musician, artist and composer working at the interface of social,
+                        political
+                        and technical infrastructures. Focused on electronic composition across music and art
+                        contexts,
+                        her practice spans live performance, recording, sound installation and custom made browser
+                        plug-in. Through the sonification of data she addresses the potential of sound to engage
+                        with
+                        contemporary political questions.
+                        <span class="display_no_mobile">
+                            Recent projects employed digital technologies,
+                            sonification
+                            and the aesthetisation of data as a means of fostering discussion around contemporary
+                            surveillance technologies as well as producing experimental audio works. She has exhibited
+                            and
+                            performed live internationally, and recorded music for the Staubgold, Sonic Pieces and
+                            Karlrecords labels. Her music draws upon influences from experimental electronic, drone,
+                            techno
+                            and avant-garde. Working with abstract sound as much as traditional musical forms she
+                            translates
+                            data into deeply engaging compositions. For Reservoir Festival Jasmine will perform her
+                            music
+                            live and create a new sound work for one of the arches at the Linach dam.
+                        </span>
+                    </p>
+                </div>
+                <div class="artist">
+                    <div class="art_img"><img class="artist_img pic_left" id="simon" src="img/SimonWhetham.jpg"
+                            alt="Simon Whetham" /></div>
+                    <p class="art_text text_right">
+                        <span class="display_no_mobile">Since 2005</span> Simon Whetham <span class="display_no_mobile">
+                            has developed a practice of working with sonic activity as a raw
+                            material for creation. He</span> uses environmental sound, employing a variety of methods
+                        and
+                        techniques
+                        in order to obtain often unnoticed and obscured sonic phenomena. When presenting work in a
+                        performance or installation, for him the space and the objects within become instruments to
+                        be
+                        played.
+                        <span class="display_no_mobile">
+                            His artistic investigations have caused him to work increasingly in multi-disciplinary
+                            projects,
+                            leading his work to become more visual and tangible. He is currently exploring ways to
+                            retain
+                            physical traces of sound and transforming energy forms.
+                        </span>
+                    </p>
+                </div>
+            </div>
             <!-- <div class="slide_container">
                 <div class="card">
                     <div class="card_inner">
@@ -1863,9 +2023,8 @@
                     Helper Helper</p>
             </div>
         </div> -->
-
         <footer>
-            <div id="particles-js"></div>
+            <!-- <div id="particles-js"></div> -->
             <div class="footer_container">
 
                 <div class="partone german">
@@ -2068,13 +2227,16 @@
                     <p>
                         <b>DISCLAIMER</b><br />
                         Accountability for content<br />
-                        The contents of our pages have been created with the utmost care. However, we cannot guarantee
+                        The contents of our pages have been created with the utmost care. However, we cannot
+                        guarantee
                         the contents' accuracy, completeness or topicality.
-                        According to statutory provisions, we are furthermore responsible for our own content on these
+                        According to statutory provisions, we are furthermore responsible for our own content on
+                        these
                         web pages.
                         In this matter, please note that we are not obliged to monitor the transmitted or saved
                         information of third parties,
-                        or investigate circumstances pointing to illegal activity. Our obligations to remove or block
+                        or investigate circumstances pointing to illegal activity. Our obligations to remove or
+                        block
                         the use of information under generally applicable laws remain
                         unaffected by this as per §§ 8 to 10 of the Telemedia Act (TMG).<br />
                     </p>
@@ -2084,7 +2246,8 @@
                         <b>ACCOUNTABILITY FOR LINKS</b><br />
                         Responsibility for the content of external links (to web pages of third parties) lies solely
                         with the operators of the linked pages.
-                        No violations were evident to us at the time of linking. Should any legal infringement become
+                        No violations were evident to us at the time of linking. Should any legal infringement
+                        become
                         known to us, we will remove the respective link immediately.<br />
                     </p>
                 </div>
@@ -2092,11 +2255,14 @@
                     <p>
                         <b>COPYRIGHT</b><br />
 
-                        Our web pages and their contents are subject to German copyright law. Unless expressly permitted
+                        Our web pages and their contents are subject to German copyright law. Unless expressly
+                        permitted
                         by law, every form of utilizing,
-                        reproducing or processing works subject to copyright protection on our web pages requires the
+                        reproducing or processing works subject to copyright protection on our web pages requires
+                        the
                         prior consent of the respective owner of the rights.
-                        Individual reproductions of a work are only allowed for private use. The materials from these
+                        Individual reproductions of a work are only allowed for private use. The materials from
+                        these
                         pages are copyrighted and any unauthorized use may violate copyright laws. <br />
                     </p>
                 </div>
@@ -2114,13 +2280,16 @@
 
                         Verantwortlichkeit für den Inhalt<br />
                         Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
-                        Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Weiterhin
+                        Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+                        Weiterhin
                         sind wir nach den gesetzlichen Bestimmungen für eigene Inhalte auf diesen Webseiten
                         verantwortlich.
-                        Wir weisen Sie in diesem Zusammenhang darauf hin, dass wir nicht verpflichtet sind, übermittelte
+                        Wir weisen Sie in diesem Zusammenhang darauf hin, dass wir nicht verpflichtet sind,
+                        übermittelte
                         oder gespeicherte fremde Informationen zu überwachen
                         oder Umstände zu untersuchen, die auf illegale Aktivitäten hindeuten.
-                        Die Nutzung von Informationen nach den allgemeinen Gesetzen bleibt hiervon gemäß §§ 8 bis 10 TMG
+                        Die Nutzung von Informationen nach den allgemeinen Gesetzen bleibt hiervon gemäß §§ 8 bis 10
+                        TMG
                         unberührt.<br />
                     </p>
                 </div>
@@ -2129,7 +2298,8 @@
                         <b>VERANTWORTLICHKEIT FÜR LINKS</b><br />
 
                         Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Zum
-                        Zeitpunkt der Verlinkung waren für uns keine Rechtsverstöße ersichtlich. Bei Bekanntwerden von
+                        Zeitpunkt der Verlinkung waren für uns keine Rechtsverstöße ersichtlich. Bei Bekanntwerden
+                        von
                         Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br />
                     </p>
                 </div>
@@ -2138,10 +2308,13 @@
                         <b>URHEBERRECHTE</b><br />
 
                         Unsere Webseiten und deren Inhalte unterliegen dem deutschen Urheberrecht. Jede Form der
-                        Verwertung, Reproduktion oder Bearbeitung von urheberrechtlich geschützten Werken auf unseren
-                        Webseiten bedarf, soweit nicht ausdrücklich gesetzlich gestattet, der vorherigen Zustimmung des
+                        Verwertung, Reproduktion oder Bearbeitung von urheberrechtlich geschützten Werken auf
+                        unseren
+                        Webseiten bedarf, soweit nicht ausdrücklich gesetzlich gestattet, der vorherigen Zustimmung
+                        des
                         jeweiligen Rechteinhabers. Einzelne Reproduktionen eines Werkes sind nur für den privaten
-                        Gebrauch gestattet. Die Materialien auf diesen Seiten sind urheberrechtlich geschützt und jede
+                        Gebrauch gestattet. Die Materialien auf diesen Seiten sind urheberrechtlich geschützt und
+                        jede
                         nicht autorisierte Verwendung kann gegen das Urheberrecht verstoßen.<br />
                     </p>
                 </div>
