@@ -614,8 +614,13 @@ input:checked + .select:before {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0px 20px rgba(0,15,0,0.25);
+    box-shadow: 0 0px 0px #323232;
     text-align: center;
+    transition: .5s ease;
+}
+.fat_green:hover {
+    box-shadow: 0 0px 8px #323232;
+    color: black !important;
 }
 
 .fade {
@@ -865,7 +870,7 @@ footer {
     width: 100%;
 }
 
-footer p {
+footer .lightgray {
     z-index: 4;
     position: relative;
 }
@@ -896,7 +901,15 @@ footer p {
     background-color: #000;
     pointer-events: none;
 }
-
+.close {
+    position: absolute;
+    right: 40px;
+    z-index: 11;
+    color: white;
+    font-size: 2rem;
+    top: 25px;
+    cursor: pointer;
+}
 .visible {
     opacity: 0.8;
     pointer-events: auto;
@@ -917,20 +930,23 @@ footer p {
     height: auto !important;
     opacity: 0;
     overflow: hidden;
-    z-index: 10;
     transition: opacity 0.5s ease;
-    pointer-events: none;
-    color: #ddd;
+    color: #111;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 15;
-    background: #111;
+    transform: translate(-50%, -50%);
+    background: white;
     padding: 50px;
+    z-index: -1;
+    top: 50%;
+}
+#tickets {
+    padding: 0px;
 }
 
 .opened {
     opacity: 1 !important;
     transition: opacity 1.2s ease;
+    z-index: 10;
 }
 
 .partone {
@@ -942,6 +958,7 @@ footer p {
     z-index: 2;
     filter: grayscale(100%);    
     margin-top: 40px;
+    transition: .5s ease;
 }
 
 .partner-logo.global-forest {
@@ -1014,6 +1031,10 @@ img#insta_hide {
 .lightgray {
     color: rgb(168, 168, 168);
 }
+a.lightgray {
+    padding: 19px 0px;
+    text-decoration: none;
+}
 
 
 #particles-js {
@@ -1033,6 +1054,22 @@ img#insta_hide {
     background-color: black;
     box-shadow: 0, 0, 20px, rgba(240, 240, 240, 0.8);
 }
+
+
+.copyright_full {
+    padding: 100px 160px;
+}
+
+
+#payment_method_disclaimer_prepaid {
+    color: whitesmoke !important;
+}
+.vertical-centered-fl {
+    color: whitesmoke !important;
+}
+
+
+
 @media screen and (max-width:1400px) {
     .fat_white {
         font-size: 2.2rem;
@@ -1092,6 +1129,9 @@ img#insta_hide {
     }
     .fat_white {
         margin-top: 10px;
+    }
+    #tickets {
+        padding-left: 8px;
     }
 }
 
@@ -1275,7 +1315,9 @@ img#insta_hide {
         left: 30px;
     }
     .close {
-        display: none;
+        z-index: 20;
+        right: 15px;
+        top: 15px;
     }
     .fade {
         display: none;
@@ -1309,6 +1351,9 @@ img#insta_hide {
 }
 
 @media screen and (max-width: 768px) {
+    .artist_container {
+        padding: 0px;
+    }
     .fat_white {
         font-size: 1.2rem;
         background-color: rgba(0,0,0,0.5);
@@ -1474,6 +1519,15 @@ img#insta_hide {
         margin-right: 30px;
         margin-top: 20px;
     }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .copyright_full {
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1496,7 +1550,24 @@ img#insta_hide {
         padding-left: 0px;
         margin: 0px;
     }
+    .popup {
+        width: 87% !important;
+        left: 10px;
+        transform: translate(0%, -50%);
+    }
+    #tickets {
+        padding-left: 8px;
+    }
+    .close {
+        right: 4px;
+        top: 5px;
+    }
+    .art_img {
+        width: 100%;
+    }
 }
-@media only screen and (orientation: landscape) { 
-    
- }
+@media screen and (max-width: 400px) {
+    #dgbrt-ticket-frame {
+          height: 680px !important;
+    }
+}
