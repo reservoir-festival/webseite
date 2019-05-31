@@ -9,6 +9,7 @@ body {
     overflow-x: hidden;
 
 }
+
 .iconB {
     position: absolute; 
     top: 42px;
@@ -18,14 +19,8 @@ body {
     height: 33px;
     cursor: pointer;
 }
-#mobburger {
-    display: none;
-}
 #pcburger {
     display: block;
-}
-#mobicon {
-    display: none;
 }
 #pcicon {
     display: block;
@@ -470,10 +465,12 @@ input:checked + .select:before {
 }
 
 .info {
-    z-index: 109201392098;
-    position: fixed;
-    top: 15%;
-    right: 0;
+  z-index: 109201392098;
+  position: fixed;
+  top: 24px;
+  right: 0;
+  margin-right: -240px;
+  transition: 1s ease;
 }
 
 .pdf,
@@ -482,7 +479,7 @@ input:checked + .select:before {
 }
 
 .pdf {
-    width: 34px;
+    width: 24px;
     height: 34px;
     padding: 23px;
     float: left;
@@ -495,9 +492,10 @@ input:checked + .select:before {
 }
 
 .pdf_container {
-    padding: 20px 40px;
+    padding: 0px 40px;
     float: right;
     border-bottom-left-radius: 25px;
+    width: 160px;
 }
 
 .moved {
@@ -1311,12 +1309,6 @@ a.lightgray {
     .fade {
         display: none;
     }
-    /*#mobburger {
-        display: block;
-    }
-    #pcburger {
-        display: none;
-    }*/
     .hamburger {
         display: block;
     }
