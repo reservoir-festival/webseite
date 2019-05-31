@@ -470,15 +470,17 @@ input:checked + .select:before {
   top: 24px;
   right: 0;
   margin-right: -240px;
-  transition: 1s ease;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-property: margin-right;
 }
 
-.pdf,
-.pdf_container {
+.info_tab,
+.info_container {
     background-color: rgba(240, 240, 240, 0.8);
 }
 
-.pdf {
+.info_tab {
     width: 24px;
     height: 34px;
     padding: 23px;
@@ -487,11 +489,11 @@ input:checked + .select:before {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
-.pdf img {
+.info_tab img {
     margin-left: 8px;
 }
 
-.pdf_container {
+.info_container {
     padding: 0px 40px;
     float: right;
     border-bottom-left-radius: 25px;
@@ -1372,18 +1374,18 @@ a.lightgray {
       -ms-transform: translateX(17px);
       transform: translateX(17px);
     }
-   .pdf {
+   .info_tab {
        width: 30px;
        height: 30px;
        padding: 10px;
        border-top-left-radius: 20px;
        border-bottom-left-radius: 20px;
    }
-   .pdf_container {
+   .info_container {
       border-bottom-left-radius: 20px;
-    } 
-    .pdf,
-    .pdf_container {
+    }
+    .info_tab,
+    .info_container {
       background-color: rgba(200, 200, 200, 0.8);
     }
 

@@ -46,7 +46,7 @@ $(document).ready(function(){
       set_height();
       paralax_animation_frontp();
       tweenMaxAnim();
-      pdfAnim();
+      infoAnim();
       sliderSetup();
   }, 1000);
 
@@ -332,11 +332,7 @@ function paralax_animation_frontp() {
     });
 }
 
-function pdfAnim() {
-  // setTimeout(function() {
-  //   $('.info').css('margin-right', - ($('.german .pdf_container').outerWidth() + 10));
-  // }, 400);
-
+function infoAnim() {
   $('.iconB').on('click', function() {  
     const icon = $('.iconB');
 
