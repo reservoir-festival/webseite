@@ -1037,17 +1037,6 @@ a.lightgray {
 }
 
 
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    background-color: #111;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
 .soon {
     font-size: 5rem;
     color: gray;
