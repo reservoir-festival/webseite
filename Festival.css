@@ -934,20 +934,20 @@ footer .lightgray {
 }
 
 .popup {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: auto;
+    bottom: 50px;
+    left: 50%;
     width: 80%;
     height: auto;
+    transform: translate(-50%, 0%);
     opacity: 0;
     overflow: hidden;
     transition: opacity 0.5s ease;
     color: #111;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background: white;
     padding: 50px;
     z-index: -1;
-    top: 50%;
 }
 
 .popup_close {
@@ -960,11 +960,12 @@ footer .lightgray {
 
 .ticket_popup {
     position: absolute;
+    top: 50px;
+    bottom: auto;
+    left: 50%;
     width: 80%;
     height: auto;
     transform: translate(-50%, 0%);
-    top: 50px;
-    left: 50%;
     opacity: 0;
     overflow: hidden;
     transition: opacity 0.5s ease;
