@@ -39,6 +39,11 @@ $(document).ready(function(){
     $(this).removeClass('visible');
   });
 
+  $('.popup_close').on('click', function() {
+    $('.opened').removeClass('opened');
+    $('.overlay').removeClass('visible');
+  });
+
   setTimeout(function() {
       // loadingScreen();
       logoLoad();

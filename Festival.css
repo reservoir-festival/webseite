@@ -482,7 +482,7 @@ input:checked + .select:before {
 .info {
   z-index: 109201392098;
   position: fixed;
-  top: 15%;
+  top: 10%;
   right: 0;
   margin-right: -240px;
   transition-duration: 1s;
@@ -949,6 +949,15 @@ footer .lightgray {
     z-index: -1;
     top: 50%;
 }
+
+.popup_close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
 #tickets {
     padding: 0px;
 }
