@@ -905,21 +905,13 @@ footer .lightgray {
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 10;
+    z-index: 999;
     opacity: 0;
     transition: opacity 1.2s ease;
     background-color: #000;
     pointer-events: none;
 }
-.close {
-    position: absolute;
-    right: 40px;
-    z-index: 11;
-    color: white;
-    font-size: 2rem;
-    top: 25px;
-    cursor: pointer;
-}
+
 .visible {
     opacity: 0.8;
     pointer-events: auto;
@@ -935,6 +927,7 @@ footer .lightgray {
 
 .popup {
     position: absolute;
+    box-sizing: border-box;
     top: auto;
     bottom: 50px;
     left: 50%;
@@ -944,18 +937,10 @@ footer .lightgray {
     opacity: 0;
     overflow: hidden;
     transition: opacity 0.5s ease;
-    color: #111;
-    background: white;
-    padding: 50px;
+    color: #eee;
+    padding: 20px;
     z-index: -1;
-}
-
-.popup_close {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    font-size: 2em;
+    pointer-events: none;
 }
 
 .ticket_popup {
@@ -973,6 +958,15 @@ footer .lightgray {
     background: white;
     padding: 50px;
     z-index: -1;
+    pointer-events: auto;
+}
+
+.ticket_popup_close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 2em;
 }
 
 .opened {
