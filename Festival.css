@@ -956,7 +956,7 @@ footer .lightgray {
     transition: opacity 0.5s ease;
     color: #111;
     background: white;
-    padding: 50px;
+    padding: 20px;
     z-index: -1;
     pointer-events: auto;
 }
