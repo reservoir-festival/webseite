@@ -825,7 +825,42 @@ input:checked + .select:before {
     padding: 80px 70px;
     margin-top: 90px;
 }
+/* .first.last {
+    display: flex;
+    flex-direction: row;
+}
+.first {
+    float: left;
+}
+.last {
+ float: right;
+} */
+.arrival_container {
+    border: 2px solid #eee;
+}
+.code_arrival a {
+    color: white;
+    margin-right: 20px;
+}
+.code_arrival .link::after {
+    background-color: white;
+}
 
+.code_arrival {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.code_arrival::after {
+    color: white;
+}
+.white_line {
+    color: white;
+}
+.png_white {
+    background-color: white;
+}
 .sponsors {
     width: 100%;
 }
@@ -1288,6 +1323,9 @@ a.lightgray {
 }
 
 @media screen and (max-width: 850px) {
+    .sponsor {
+        filter: grayscale(0%);
+    }
     .welcome_text {
         order: 2;
         width: auto;
