@@ -902,7 +902,7 @@ input:checked + .select:before {
 }
 #detailtwo {
     float: right;
-    margin-right: 3%;
+    /* margin-right: 3%; */
 }
 summary {
     padding: 20px;
