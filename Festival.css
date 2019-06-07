@@ -278,7 +278,9 @@ input:checked + .select:before {
 .mobile {
     display: none;
 }
-
+.display_no_pc {
+    display: none;
+}
 .welcome_text {
     order: 2;
     width: 64%;
@@ -1326,6 +1328,10 @@ a.lightgray {
     .sponsor {
         filter: grayscale(0%);
     }
+    .partner-logo {
+        filter: grayscale(0%);
+    }
+    
     .welcome_text {
         order: 2;
         width: auto;
@@ -1364,9 +1370,6 @@ a.lightgray {
         margin: 0px;
         margin-left: 0px;
         margin-right: 0px;
-    }
-    .display_no_mobile {
-        display: none;
     }
     .fat_white {
         font-size: 1.2rem;
@@ -1420,12 +1423,18 @@ a.lightgray {
     /*#pcicon {
         display: none;
     }*/
-    .agb {
-        padding-left: 0;
+    a.lightgray {
+        padding: 0px 0px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .display_no_mobile {
+        display: none;
+    }
+    .display_no_pc {
+        display: block;
+    }
     .fat_white {
         font-size: 1.2rem;
         background-color: rgba(0,0,0,0.5);
@@ -1538,12 +1547,14 @@ a.lightgray {
     .parttwo {
         margin: 0px;
         width: 100%;
+        margin-top: 10px;
     }
 
     .partone {
         margin: 0px;
         width: 100%;
         margin-left: 15px;
+        margin-bottom: 10px;
     }
 
     footer {
