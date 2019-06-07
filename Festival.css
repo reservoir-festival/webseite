@@ -1445,6 +1445,11 @@ a.lightgray {
     .sponsor_logos {
         margin-left: 20px;
     }
+    .sponsor {
+        width: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .mobile {
         display: block;
     }
@@ -1541,7 +1546,7 @@ a.lightgray {
     .footer_container {
         flex-direction: column;
         padding: 10px;
-        width: 100%;
+        width: auto;
     }
 
     .parttwo {
@@ -1553,10 +1558,13 @@ a.lightgray {
     .partone {
         margin: 0px;
         width: 100%;
-        margin-left: 15px;
+        margin-left: 0px;
         margin-bottom: 10px;
+        text-align: center;
     }
-
+    .p_left {
+        text-align: left !important;
+    }
     footer {
         overflow: hidden;
         padding-left: 0px;
