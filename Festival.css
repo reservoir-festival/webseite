@@ -1564,6 +1564,7 @@ a.lightgray {
     }
     .p_left {
         text-align: left !important;
+        margin-left: 20px;
     }
     footer {
         overflow: hidden;
