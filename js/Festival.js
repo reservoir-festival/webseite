@@ -325,9 +325,9 @@ function paralax_animation_frontp() {
       let tilty = - (dx / cx);
 
       // TweenMax.to(".logo", 1, {x:tilty*30, y:tiltx*30, rotation:0.05, ease:Power2.easeOut});
-      TweenMax.to(".Hintergrund", 1, {x:-tilty*20, y:-tiltx*20, rotation:0.05, ease:Power2.easeOut});
-      TweenMax.to(".back", 1, {x:-tilty*5, y:-tiltx*40, rotation:0.05, ease:Power2.easeOut});
-      TweenMax.to(".front", 1, {x:-tilty*-5, y:-tiltx*20, rotation:0.05, ease:Power2.easeOut});
+      TweenMax.to(".Hintergrund", 1, {x:-tilty*0, y:-tiltx*20, rotation:0.05, ease:Power2.easeOut});
+      TweenMax.to(".back", 1, {x:-tilty*0, y:-tiltx*40, rotation:0.05, ease:Power2.easeOut});
+      TweenMax.to(".front", 1, {x:-tilty*0, y:-tiltx*20, rotation:0.05, ease:Power2.easeOut});
       TweenMax.to(".middle", 1, {x:-tilty*0, y:-tiltx*55, rotation:0.05, ease:Power2.easeOut});
     }
     
