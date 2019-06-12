@@ -1601,8 +1601,11 @@ a.lightgray {
     h2 {
         font-size: 1.5rem;
     }
+    h3 {
+        font-size: 1rem;
+    }
     .copyright_full {
-        padding: 5px;
+        padding: 15px;
     }
 }
 
