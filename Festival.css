@@ -279,7 +279,7 @@ input:checked + .select:before {
     display: none;
 }
 .display_no_pc {
-    display: none;
+    display: none !important;
 }
 .welcome_text {
     order: 2;
@@ -444,7 +444,7 @@ input:checked + .select:before {
 }
 
 #sTwoB {
-    top: -2200px;
+    top: -1961px;
     left: 298px;
 }
 
@@ -958,10 +958,14 @@ footer .lightgray {
 .footer_menu {    
     display: flex;
     justify-content: center;
-    padding: 50px 0px;
-    background-color: #111;
+    padding: 0px 0px;
+    background-color: black;
+    color: #eee;
+    z-index: 5;
 }
-
+.fm_container {
+    z-index: 2;
+}
 .pop {
     cursor: pointer;
     margin-right: 50px;
@@ -1438,7 +1442,7 @@ a.lightgray {
         display: none;
     }
     .display_no_pc {
-        display: block;
+        display: block !important;
     }
     .fat_white {
         font-size: 1.2rem;
@@ -1550,7 +1554,7 @@ a.lightgray {
 
     .footer_container {
         flex-direction: column;
-        padding: 10px;
+        /* padding: 10px; */
         width: auto;
     }
 
@@ -1579,6 +1583,7 @@ a.lightgray {
     .footer_menu {
         padding-left: 35px;
         flex-direction: column;
+        padding: 0px 0px;
     }
 
     .partthree {
