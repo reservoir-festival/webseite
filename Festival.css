@@ -927,6 +927,17 @@ details {
     display: flex;
     flex-direction: column;
 }
+.workshop {
+    background-color: black;
+    
+    /* margin: 20px;
+    padding: 20px; */
+}
+.workshop a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
 h2 {
     padding-left: 2%;
 }
