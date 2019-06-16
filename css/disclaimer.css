@@ -94,7 +94,6 @@ a {
   text-decoration: none;
   color: white;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 ul.address {
@@ -104,8 +103,22 @@ ul.address {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 20px;}
+  padding-inline-start: 20px;
+}
 
-.back {
+.back-link {
   color: #999;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: #999;
+}
+
+.back-link:hover {
+  opacity: 0.5;
+}
+
+.back-link:before {
+    content: "←";
+    display: inline-block;
+    width: 24px;
 }

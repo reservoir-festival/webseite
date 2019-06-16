@@ -181,6 +181,7 @@ input:checked + .select:before {
 .ticket_container {
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .description_container {
@@ -301,28 +302,18 @@ footer h1 {
     text-align: left !important;
 }
 
-.info_link, .info_exlink {
+.info-link {
     display: block;
     color: white;
 }
-.info_link:hover, .info_exlink:hover {
+.info-link:hover {
     filter: opacity(50%);
 }
 
-.info_link:before {
-    content: "";
+.info-link:before {
     display: inline-block;
-    background: url("../img/link.png") no-repeat bottom center;
+    content: "→";
     width: 24px;
-    height: 24px;
-}
-
-.info_exlink:before {
-    content: "";
-    display: inline-block;
-    background: url("../img/exlink.png") no-repeat bottom center;
-    width: 24px;
-    height: 24px;
 }
 
 .info {
@@ -566,7 +557,10 @@ footer h1 {
 .sperre_mobile {
     width: 100%;
     height: auto;
-    margin-top: -5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     z-index: -1;
 }
 

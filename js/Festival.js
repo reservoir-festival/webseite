@@ -2,10 +2,6 @@ let menuOpend = false;
 
 const fancyColors = [0x6556a5, 0xf69b70, 0xe83c96, 0x4cb749, 0xf36c33, 0x5db5a3, 0x597b4c, 0xcf6b39, 0xf6ef76, 0xa7d6f3, 0x73bf44, 0xdf57a0, 0xe6a323, 0xf1e911, 0xb29da2, 0x40b9ea, 0xee9936, 0xab8533, 0x288b3e, 0x243d96, 0xea8125, 0x70bf44, 0xa36dae, 0xd9e13f, 0x72471c, 0xe05962, 0xe41e25, 0x882471, 0x131111, 0x1f1b1c];
 
-$(window).bind('setup', function() {
-  loadingScreen();
-});
-
 $(document).ready(function(){
   $('.english').each(function() {
     $(this).addClass('display_none');
@@ -31,72 +27,44 @@ $(document).ready(function(){
   });
 
   setTimeout(function() {
-      // loadingScreen();
-      logoLoad();
-      to_top();
-      set_height();
-      paralax_animation_frontp();
-      tweenMaxAnim();
-      infoAnim();
-      ticketAnim();
+      startLogoAnim();
+      initToTop();
+      setHeight();
+      startParalaxAnim();
+      startTweenMaxAnim();
+      startTicketAnim();
   }, 1000);
 
   languageSwitch();
-
 });
 
 
-$( window ).resize(function() {
-  to_top();
-  set_height();
-  //paralax_animation_frontp();
-  tweenMaxAnim();
+$(window).resize(function() {
+  initToTop();
+  setHeight();
+  //startParalaxAnim();
+  startTweenMaxAnim();
 });
 
-function loadingScreen() {
-    var words = ["FESTIVAL", "MUSIC", "ARTISTS", "CREATIVE", "EXPERIMENTAL", "ART", "PROJECTION", "PEOPLE", "BLACK FOREST", "LINACH"];
-
-  window.addEventListener("load", function() {
-      var randoms = window.document.getElementsByClassName("randoms");
-      for (i = 0; i < randoms.length; i++)
-          changeWord(randoms[i]);
-  }, false);
-
-  function changeWord(a) {
-      a.style.opacity = '0.1';
-      a.innerHTML = words[getRandomInt(0, words.length - 1)];
-      setTimeout(function() {
-          a.style.opacity = '1';
-      }, 425);
-      setTimeout(function() {
-          changeWord(a);
-      }, getRandomInt(550, 800));
-  }
-
-
-  function getRandomInt(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-}
-
-function logoLoad() {
+function startLogoAnim() {
   var one = $("#Stringone");
   var four = $("#Stringfour");
   var six = $("#Stringsix");
   var eight = $("#Stringeight");
-  TweenMax.set(one, {y:2000});
-  TweenMax.set(four, {y:2000});
-  TweenMax.set(six, {y:2000});
-  TweenMax.set(eight, {y:2000});
-
   var two = $("#Stringtwo");
   var three = $("#Stringthree");
   var five = $("#Stringfive");
   var seven = $("#Stringseven");
-  TweenMax.set(two, {y:-2000});
-  TweenMax.set(three, {y:-2000});
-  TweenMax.set(five, {y:-2000});
-  TweenMax.set(seven, {y:-2000});
+
+  // TweenMax.set(one, {y:2000});
+  // TweenMax.set(four, {y:2000});
+  // TweenMax.set(six, {y:2000});
+  // TweenMax.set(eight, {y:2000});
+
+  // TweenMax.set(two, {y:-2000});
+  // TweenMax.set(three, {y:-2000});
+  // TweenMax.set(five, {y:-2000});
+  // TweenMax.set(seven, {y:-2000});
 
   setTimeout(function() {
     TweenMax.to(one, 2 , {y:0});
@@ -112,7 +80,7 @@ function logoLoad() {
 
 function languageSwitch() {
   $('.language_switch').on('click', function() {
-    if($('.switch input').prop('checked') == false) {
+    if($('.switch input').prop('checked') === false) {
       $('.german').each(function() {
         $(this).removeClass('display_none');
         $(this).removeClass('language_hidden');
@@ -141,7 +109,7 @@ function languageSwitch() {
   });
 }
 
-function tweenMaxAnim() {
+function startTweenMaxAnim() {
   var one = $("#Stringone");
   var four = $("#Stringfour");
   var six = $("#Stringsix");
@@ -164,14 +132,14 @@ function tweenMaxAnim() {
         setTimeout(function() {
           TweenMax.to(five, 0.6, {opacity:1});
         }, 80);
-    }, 2000)
+    }, 2000);
     setTimeout(function() {
       TweenMax.to(six, 0.5, {opacity:1});
       TweenMax.to(six, 0.3, {opacity:0.2});
       setTimeout(function() {
         TweenMax.to(six, 0.6, {opacity:1});
       }, 80);
-    }, 1500)
+    }, 1500);
   }, 3500);
 
   var ImgSeven = $("#sSeven");
@@ -216,7 +184,7 @@ function tweenMaxAnim() {
   }, 3500);
 }
 
-function set_height() {
+function setHeight() {
   $(".fade").height($(".sperre").height());
   $(".fade").width($(".sperre").width());
 
@@ -225,21 +193,21 @@ function set_height() {
   }, 500);
 }
 
-function to_top() {
-  $(window).scroll(function(){
-        if ($(this).scrollTop() < 200) {
-            $('.up') .fadeOut("fast");
-        } else {
-            $('.up') .fadeIn("fast");
-        }
-    });
-    $('.up').on('click', function(){
-        $('html, body').animate({scrollTop:0}, 'fast');
-        return false;
-    });
+function initToTop() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() < 200) {
+      $('.up').fadeOut("fast");
+    } else {
+      $('.up').fadeIn("fast");
+    }
+  });
+  $('.up').on('click', function() {
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
+    return false;
+  });
 }
 
-function paralax_animation_frontp() {
+function startParalaxAnim() {
     let request = null;
     let mouse = { x: 0, y: 0 };
     let cx = window.innerWidth / 2;
@@ -264,30 +232,13 @@ function paralax_animation_frontp() {
       TweenMax.to(".front", 1, {x:-tilty*0, y:-tiltx*20, rotation:0.05, ease:Power2.easeOut});
       TweenMax.to(".middle", 1, {x:-tilty*0, y:-tiltx*55, rotation:0.05, ease:Power2.easeOut});
     }
-    
-    window.addEventListener('resize', function(event){
-        window.innerWidth / 2;
-        window.innerHeight / 2;
-    });
+    // window.addEventListener('resize', function(event){
+    //     window.innerWidth / 2;
+    //     window.innerHeight / 2;
+    // });
 }
 
-function infoAnim() {
-  $('.iconB').on('click', function() {  
-    const icon = $('.iconB');
-
-    if (menuOpend) {
-      icon.removeClass('active');
-      icon.parent().parent().removeClass('moved');
-      menuOpend = false;
-    } else {
-      icon.addClass('active');
-      icon.parent().parent().addClass('moved');
-      menuOpend = true;
-    }
-  });
-}
-
-function ticketAnim() {
+function startTicketAnim() {
   setInterval(function() {
     const bgColor = fancyColors[Math.floor(fancyColors.length * Math.random())];
     const bgColorStr = '#' + bgColor.toString(16);
