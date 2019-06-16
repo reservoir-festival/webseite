@@ -1,5 +1,7 @@
 let menuOpend = false;
 
+const fancyColors = [0x6556a5, 0xf69b70, 0xe83c96, 0x4cb749, 0xf36c33, 0x5db5a3, 0x597b4c, 0xcf6b39, 0xf6ef76, 0xa7d6f3, 0x73bf44, 0xdf57a0, 0xe6a323, 0xf1e911, 0xb29da2, 0x40b9ea, 0xee9936, 0xab8533, 0x288b3e, 0x243d96, 0xea8125, 0x70bf44, 0xa36dae, 0xd9e13f, 0x72471c, 0xe05962, 0xe41e25, 0x882471, 0x131111, 0x1f1b1c];
+
 $(window).bind('setup', function() {
   loadingScreen();
 });
@@ -10,22 +12,6 @@ $(document).ready(function(){
     $(this).addClass('language_hidden');
   });
       
-  setTimeout(function() {
-    $('.full_content').css('opacity', '1');
-    // $('.loading').css('opacity', '0');
-  }, 1000);
-
-  // setTimeout(function() {
-  //   $('.loading').css('display', 'none');
-  // }, 5000);
-
-  setTimeout(function() {
-    $('.slick-slide').each(function() {
-      console.log("$(this).find('.card_front').width()");
-      $(this).height();
-    });
-  }, 500);
-
   $('.pop').each(function() {
     $(this).on('click', function() {
       var target = '#' + $(this).attr('tar');
@@ -52,7 +38,7 @@ $(document).ready(function(){
       paralax_animation_frontp();
       tweenMaxAnim();
       infoAnim();
-      sliderSetup();
+      ticketAnim();
   }, 1000);
 
   languageSwitch();
@@ -65,7 +51,6 @@ $( window ).resize(function() {
   set_height();
   //paralax_animation_frontp();
   tweenMaxAnim();
-  sliderSetup();
 });
 
 function loadingScreen() {
@@ -126,7 +111,7 @@ function logoLoad() {
 }
 
 function languageSwitch() {
-  $('.language').on('click', function() {
+  $('.language_switch').on('click', function() {
     if($('.switch input').prop('checked') == false) {
       $('.german').each(function() {
         $(this).removeClass('display_none');
@@ -154,57 +139,6 @@ function languageSwitch() {
   $('.america').on('click', function() {
     $(".switch input").prop('checked', true); 
   });
-}
-
-function sliderSetup() {
-  $('.slide_container').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    centerMode: true,
-    arrows: true,
-    prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"></button>',
-    nextArrow: '<button class="slick-next" aria-label="Next" type="button"></button>',
-    waitForAnimate: false,
-    touchThreshold: 10,
-    responsive: [
-      {
-        breakpoint: 970,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-          infinite: true,
-          arrows: false,
-          dots: true,
-        }
-      }
-    ]
-  });
-  // $('.slide_container.german').slick({
-  //   infinite: true,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 3,
-  //   centerMode: true,
-  //   arrows: true,
-  //   prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"></button>',
-  //   nextArrow: '<button class="slick-next" aria-label="Next" type="button"></button>',
-  //   waitForAnimate: false,
-  //   touchThreshold: 10,
-  //   responsive: [
-  //     {
-  //       breakpoint: 970,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         centerMode: false,
-  //         infinite: true,
-  //         arrows: false,
-  //         dots: true,
-  //       }
-  //     }
-  //   ]
-  // });
 }
 
 function tweenMaxAnim() {
@@ -351,4 +285,18 @@ function infoAnim() {
       menuOpend = true;
     }
   });
+}
+
+function ticketAnim() {
+  setInterval(function() {
+    const bgColor = fancyColors[Math.floor(fancyColors.length * Math.random())];
+    const bgColorStr = '#' + bgColor.toString(16);
+    const r = Math.floor(bgColor / 65536);
+    const g = Math.floor((bgColor % 65536) / 256);
+    const b = Math.floor(bgColor % 255);
+    const luminance = (0.299 * r + 0.587 * g + 0.114 * b);
+    const colorStr = (luminance >= 140) ? '#000' : '#fff';
+    $('.ticket_banner').css('background-color', bgColorStr);
+    $('.ticket_banner').css('color', colorStr);
+  }, 1000);
 }
