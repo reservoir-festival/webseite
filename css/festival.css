@@ -301,11 +301,28 @@ footer h1 {
     text-align: left !important;
 }
 
-.info_link {
+.info_link, .info_exlink {
+    display: block;
     color: white;
 }
-.info_link:hover {
+.info_link:hover, .info_exlink:hover {
     filter: opacity(50%);
+}
+
+.info_link:before {
+    content: "";
+    display: inline-block;
+    background: url("../img/link.png") no-repeat bottom center;
+    width: 24px;
+    height: 24px;
+}
+
+.info_exlink:before {
+    content: "";
+    display: inline-block;
+    background: url("../img/exlink.png") no-repeat bottom center;
+    width: 24px;
+    height: 24px;
 }
 
 .info {
@@ -355,10 +372,6 @@ footer h1 {
     padding-bottom: 2.5%;
     padding-left: 5%;
     background-color: #111;
-}
-.footer_menu .link {
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 .text_left {
@@ -616,15 +629,6 @@ a.workshop_descr {
     line-height: 1.3em;
 }
 
-.link {
-    cursor: pointer;
-    color: #a0a0a0;
-}
-
-.link:hover {
-    color: #eee;
-}
-
 .ticket_banner {
     background-color: #ee9936;
     color: black;
@@ -734,11 +738,6 @@ a.workshop_descr {
 #agb_head {
     font-size: 1.5em
 }
-
-.copyright_full {
-    padding: 100px 160px;
-}
-
 
 #payment_method_disclaimer_prepaid {
     color: whitesmoke !important;
@@ -1080,9 +1079,6 @@ a.workshop_descr {
     }
     h3 {
         font-size: 1rem;
-    }
-    .copyright_full {
-        padding: 15px;
     }
     .program_info {
         padding-inline-start: 20px;
