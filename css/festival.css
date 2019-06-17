@@ -339,6 +339,7 @@ footer h1 {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 40px;
+    vertical-align: middle;
     z-index: 2;
 }
 .partner img {
@@ -348,11 +349,19 @@ footer h1 {
 .partner_logo {
     filter: grayscale(100%);
     transition-property: filter;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     transition-timing-function: ease;
 }
 .partner_logo:hover {
     filter: grayscale(0%);
+}
+.partner_logo_white {
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+.partner_logo_white:hover {
+    opacity: 0.66;
 }
 
 .footer_menu {    
