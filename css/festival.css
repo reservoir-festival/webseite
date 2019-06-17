@@ -380,7 +380,7 @@ footer h1 {
 
 #strings {
     position: absolute;
-    top: 0;
+    top: 2500px;
     z-index: 0;
 }
 
