@@ -397,6 +397,7 @@ footer h1 {
     position: absolute;
     width: 20px;
     height: auto;
+    pointer-events: none;    
 }
 
 #sOne {
