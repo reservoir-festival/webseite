@@ -37,7 +37,13 @@ footer {
 summary {
     font-weight: bold;
 }
-
+.hinweis {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-size: 0.9rem;
+    z-index: 2 !important;
+}
 .english, .german {
 }
 .germany, .america {
@@ -242,6 +248,7 @@ input:checked + .select:before {
     padding-right: 5%;
     padding-bottom: )%;
     padding-left: 5%;
+    z-index: 1;
 }
 
 .social_container {
@@ -389,7 +396,7 @@ footer h1 {
 
 #strings {
     position: absolute;
-    top: 2500px;
+    top: 2253px;
     z-index: 0;
 }
 
@@ -601,6 +608,7 @@ details {
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
+    z-index: 1;
 }
 .donators {
     margin-right: 150px;
