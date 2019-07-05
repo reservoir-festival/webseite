@@ -18,6 +18,20 @@
 
 <body>
     <div class="overlay"></div>
+    <div class="marker_container">
+    <div class="marker german">
+        <a href="#ticket">Ticket</a>
+        <a href="#workshop">Workshop</a>
+        <a href="#afternoon_program">Nachmittagsprogramm</a>
+        <a href="#evening_program">Abendprogramm</a>
+    </div>
+    <div class="marker english">
+        <a href="#ticket_en">Ticket</a>
+        <a href="#workshop_en">Workshop</a>
+        <a href="#afternoon_program_en">Afternoonprogram</a>
+        <a href="#evening_program_en">Eveningprogramm</a>
+    </div>
+</div>
     <div class="language_switch">
         <p class="germany"> DE</p>
         <div>
@@ -1476,7 +1490,7 @@
                 architectural masterpiece from the 1920s spanning the idyllic valley of the Linach creek at 143 meters,
                 becomes the setting and resource of a festival for electric, electronic and digital arts.
             </p>
-            <div class="ticket_container">
+            <div class="ticket_container"  id="ticket_en">
                 <p class="ticket_banner pop" tar="tickets">Buy Tickets Now!</p>
             </div>
         </div>
@@ -1493,7 +1507,7 @@
                 das mit 143 Metern das idyllische Linachtal überspannt, zur Kulisse und Ressource eines Festivals für
                 elektrische, elektronische und digitale Künste.
             </p>
-            <div class="ticket_container">
+            <div class="ticket_container" id="ticket">
                 <p class="ticket_banner pop" tar="tickets">Jetzt Tickets kaufen!</p>
             </div>
         </div>
@@ -1543,7 +1557,7 @@
     </div>
 
     <div class="program_container english">
-        <details class="workshop">
+        <details class="workshop" id="workshop_en">
             <summary>Workshop <span class="display_no_mobile">(separate registration)</span></summary>
             <p class="program_info">from 11:00am to 4:00pm, participation fee: €60</p>
             <ul class="program_list">
@@ -1560,7 +1574,7 @@
                             href="https://www.simonwhetham.co.uk/">www.simonwhetham.co.uk</a></p>
                 </li>
         </details>
-        <details id="afternoon_program">
+        <details id="afternoon_program_en">
             <summary>Afternoon Program</summary>
             <p class="program_info">from 3:00pm, free admission</p>
             <ul class="program_list">
@@ -1575,7 +1589,7 @@
             </ul>
 
         </details>
-        <details id="evening_program">
+        <details id="evening_program_en">
             <summary>Evening Program</summary>
             <p class="program_info">from 8:00pm, ticket required</p>
             <ul class="program_list">
@@ -1594,7 +1608,7 @@
     </div>
 
     <div class="program_container german">
-        <details class="workshop">
+        <details class="workshop" id="workshop">
             <summary>Workshop <span class="display_no_mobile">(separate Anmeldung)</span></summary>
             <p class="program_info">von 11:00 bis 16:00 Uhr, Teilnahmegebühr: 60€</p>
             <ul class="program_list">

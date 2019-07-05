@@ -9,7 +9,26 @@ body {
     overflow-x: hidden;
 
 }
-
+.marker a {
+    color: #b6b4b4;
+    padding: 20px;
+    transition: .5s ease;
+}
+.marker_container {
+    background-color: #111;
+    color: white;
+    position: fixed;
+    flex-direction: row;
+    width: 100%;
+    text-align: right;
+    z-index: 2;
+}
+.marker a:hover {
+    color: white;
+}
+.marcer_container a {
+    text-decoration: none;
+}
 p {
     display: block;
     margin-block-start: 0.5em;
@@ -75,6 +94,7 @@ summary {
     width: 200px;
     margin-left: 15px;
     margin-top: 0px;
+    top: 40px;
 }
 .language_switch img {
     margin: 10px;
@@ -246,7 +266,7 @@ input:checked + .select:before {
     flex-direction: column;
     padding-top: 0%;
     padding-right: 5%;
-    padding-bottom: )%;
+    padding-bottom: 0%;
     padding-left: 5%;
     z-index: 1;
 }
