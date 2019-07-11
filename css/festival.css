@@ -9,26 +9,6 @@ body {
     overflow-x: hidden;
 
 }
-.marker a {
-    color: #b6b4b4;
-    padding: 20px;
-    transition: .5s ease;
-}
-.marker_container {
-    background-color: #111;
-    color: white;
-    position: fixed;
-    flex-direction: row;
-    width: 100%;
-    text-align: right;
-    z-index: 2;
-}
-.marker a:hover {
-    color: white;
-}
-.marcer_container a {
-    text-decoration: none;
-}
 p {
     display: block;
     margin-block-start: 0.5em;
@@ -261,6 +241,26 @@ input:checked + .select:before {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); 
 }
 
+.artist_link {
+    text-decoration: none;
+    color: black;
+}
+
+.artist_link:hover {
+    filter: opacity(50%);
+}
+
+.artist_link:visited {
+    filter: opacity(50%);
+    color: black;
+}
+
+.artist_link:before {
+    display: inline-block;
+    content: "→";
+    width: 24px;
+}
+
 .program_container {
     display: flex;
     flex-direction: column;
@@ -389,6 +389,20 @@ footer h1 {
 }
 .partner_logo_white:hover {
     opacity: 0.66;
+}
+
+.partner_link {
+    text-decoration: none;
+    color: white;
+}
+
+.partner_link:hover {
+    filter: opacity(50%);
+}
+
+.partner_link:visited {
+    filter: opacity(50%);
+    color: white;
 }
 
 .footer_menu {    
