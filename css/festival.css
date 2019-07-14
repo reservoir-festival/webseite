@@ -36,13 +36,7 @@ footer {
 summary {
     font-weight: bold;
 }
-.hinweis {
-    text-align: center;
-    background-color: grey;
-    color: white;
-    font-size: 0.9rem;
-    z-index: 2 !important;
-}
+
 .english, .german {
 }
 .germany, .america {
@@ -206,6 +200,8 @@ input:checked + .select:before {
 
 .description_container p {
     text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .artist_container {
@@ -525,6 +521,32 @@ footer h1 {
     margin-right: 0px !important;
 }
 
+.hinweis_container {
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    padding: 0;
+    z-index: 9999 !important;
+}
+
+.hinweis {
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    color: white;
+    font-size: 18px;
+    width: 2000px;
+    animation: laufschrift 20s linear infinite;
+ }
+
+@keyframes laufschrift {
+    0% { transform: translate(100%, 0); }
+    100% { transform: translate(-2000px, 0); }
+}
+
 .up:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -533,17 +555,17 @@ footer h1 {
 }
 
 .up {
-    display: none;
-    z-index: 5;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    bottom: 0;
-    border-radius: 30px;
     position: fixed;
-    padding: 9px 7px;
-    margin: 20px;
+    bottom: 24px;
+    right: 0;
     width: 27px;
     height: 24px;
+    margin: 20px;
+    display: none;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 9px 7px;
     border: solid 1px rgb(115, 106, 131);
     transition: .5s ease;
 }
@@ -659,15 +681,33 @@ details {
     list-style-type:none;
     padding-inline-start: 50px;
     padding-inline-end: 50px;
+    margin-bottom: 20px;
+}
+
+.program_list .time {
+    text-align: right;
+    vertical-align: top;
+    padding-right: 0px;
+    color: #777;
+    border-right-style: none;
+    border-right-width: 1px;
+    border-right-color: #777;
+}
+.program_list .act {
+    padding-left: 5px;
 }
 
 .program_descr {
     color: #777;
 }
+.program_descr:before {
+    content: "     ";
+}
 
 .workshop_descr {
     color: #999;
     line-height: 1.3em;
+    padding-top: 6px;
 }
 
 a.workshop_descr {
