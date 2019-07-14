@@ -172,10 +172,15 @@ input:checked + .select:before {
     margin-right: 0px;
     z-index: 3;
     padding: 0px;
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 20%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 20%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 20%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 10%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 10%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 10%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); 
+}
+
+.welcome_text p {
+    text-align: justify;
+    hyphens: auto;
 }
 
 .ticket_container {
@@ -190,7 +195,7 @@ input:checked + .select:before {
     text-align: left;
     text-align: center;
     z-index: 1;
-    padding: 5%;
+    padding: 40px 18%;
     position: relative;
     background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 63%, rgba(255,255,255,0) 83%);
     background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 63%,rgba(255,255,255,0) 83%);
@@ -199,9 +204,8 @@ input:checked + .select:before {
 }
 
 .description_container p {
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .artist_container {
@@ -525,7 +529,7 @@ footer h1 {
     position: fixed;
     bottom: 0;
     height: 30px;
-    background-color: black;
+    background-color: #111;
     color: white;
     opacity: 0.8;
     padding: 0;
@@ -733,6 +737,9 @@ a.workshop_descr {
 }
 .ticket_banner:hover {
     box-shadow: 0 0px 20px #323232;
+}
+p.ticket_banner {
+    text-align: center;
 }
 
 .overlay {
@@ -1006,6 +1013,11 @@ a.workshop_descr {
         padding-right: 40px;
     }
 
+    .description_container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
     .artist {
         flex-direction: column;
     }
@@ -1200,6 +1212,10 @@ a.workshop_descr {
     .welcome_text {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .description_container {
+      padding-left: 20px;
+      padding-right: 20px;
     }
 }
 @media screen and (max-width: 400px) {
