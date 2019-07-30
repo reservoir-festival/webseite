@@ -187,6 +187,7 @@ input:checked + .select:before {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 40px;
+    opacity: 0;
 }
 
 .description_container {
