@@ -222,7 +222,7 @@ input:checked + .select:before {
     margin: 80px 0px;
 }
 .artist_image {
-    width: 37%;
+    width: 42%;
 }
 .artist_image img {
     width: 100%;
@@ -230,7 +230,7 @@ input:checked + .select:before {
 }
 
 .artist_text {
-    width: 60%;
+    width: 55%;
     margin-top: 0px;
     font-size: 1.1rem;
     text-align: justify;
