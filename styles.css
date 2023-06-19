@@ -9,7 +9,7 @@ body {
 }
 
 .title {
-  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-family: "ISL_Andvari", "Avenir Next", Helvetica, sans-serif;
   font-size: 3em;
   font-weight: 500;
   margin-bottom: 0em;
@@ -17,8 +17,8 @@ body {
 
 .subtitle {
   font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.25em;
-  line-height: 1.25em;
+  font-size: 1.5em;
+  line-height: 1.5em;
   font-weight: 500;
   margin-bottom: 0.5em;
   color: #fff;
@@ -75,7 +75,7 @@ body {
 a {
   display: block;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
