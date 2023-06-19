@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 842.18 842.87" style="enable-background:new 0 0 842.18 842.87;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#5E5E5E;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'ISL_Andvari-Regular';}
+	.st3{font-size:117.905px;}
+</style>
+<g id="Layer_2">
+	<rect id="Background" x="0.09" y="0.44" class="st0" width="842" height="842"/>
+</g>
+<g id="Foreground">
+	<polygon id="pillar__x28_left_x29_" class="st1" points="203.02,235.86 234.71,235.69 239.13,842.72 197.83,842.72 	"/>
+	<polygon id="pillar__x28_right_x29_" class="st1" points="605.1,235.88 636.78,235.69 642.54,842.87 598.81,842.87 	"/>
+	<polygon id="bracket__x28_right_x29_" class="st1" points="786.75,487.12 636.84,487.12 636.84,585.55 	"/>
+	<polygon id="bracket__x28_center_x29_" class="st1" points="234.91,582.58 371.04,515.15 469.16,515.91 605.45,585.55 
+		606.44,547.75 481.54,482.1 358.56,483.36 233.92,546.64 	"/>
+	<polygon id="bracket__x28_left_x29_" class="st1" points="72.32,487.12 204.41,487.12 204.41,585.55 	"/>
+	<rect id="bar__x28_middle_x29_" y="455.26" class="st1" width="842.18" height="32.86"/>
+	<path id="bar__x28_bottom_x29_" class="st1" d="M0,659.12v50.3c46.43-1.72,92.83,3.96,137.47,16.82
+		c20.43,5.89,40.41,13.26,59.77,22.06l38.54-0.39c54.21-23.31,114.71-36.14,176.29-36.79c64.59-0.69,128.27,12.04,185.27,36.35
+		l40.69,0.81c36.14-16.11,74.31-27.22,113.46-33.03c30.01-4.45,60.41-5.76,90.69-3.89v-52.34L0,659.12z"/>
+	<path id="bar__x28_top_x29_" class="st1" d="M0,183.96v119.48c24.4-1.68,48.89-1.26,73.22,1.24c44.66,4.6,88.33,16.19,129.41,34.34
+		l31.47-0.03c57.87-26.09,120.44-39.4,183.64-39.06c64.71,0.35,128.6,14.99,187.3,42.93l32.35-0.88
+		c31.25-14.65,64.18-25.4,98.05-32.02c35.14-6.87,71-9.23,106.73-7.03V184.06L0,183.96z"/>
+</g>
+<g id="Text">
+	<text transform="matrix(1 0 0 1 45.9839 149.1584)" class="st1 st2 st3">RESERVOIR</text>
+</g>
+</svg>
