@@ -15,26 +15,17 @@ body {
   margin-bottom: 0em;
 }
 
-.subtitle {
+.descr {
   font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.25em;
-  line-height: 1.25em;
-  font-weight: 500;
-  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  font-weight: 300;
   color: #fff;
 }
 
 .descr {
   font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.75em;
-  font-weight: 600;
-  color: #fff;
-}
-
-.descr {
-  font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.75em;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -47,12 +38,6 @@ body {
   width: fit-content;
   max-width: fit-content;
   padding: 2em;
-}
-
-#logo {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  width: 100%;
 }
 
 #footer {
@@ -68,6 +53,8 @@ a {
   display: block;
   color: #fff;
   text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
 a::before {
