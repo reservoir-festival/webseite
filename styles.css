@@ -49,6 +49,15 @@ body {
   color: #fff;
 }
 
+.doit {
+  margin-top: 1em;
+  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-style: italic;
+  color: #00C853;
+}
+
 #container {
   text-align: left;
   width: fit-content;
@@ -61,14 +70,6 @@ body {
   margin-bottom: 1em;
   width: 32em;
   max-width: 100%;
-}
-
-#stay-tuned {
-  margin-top: 1em;
-  font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.75em;
-  font-weight: 500;
-  color: #fff;
 }
 
 #footer {
