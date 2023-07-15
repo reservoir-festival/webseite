@@ -1,108 +1,422 @@
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+/* Basic setup */
+* {
   margin: 0;
-  font-family: "Avenir Next", Helvetica, sans-serif;
-  background-color: #333;
-  color: #fff;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  outline: 0;
 }
 
-.title {
-  font-family: "ISL_Andvari", "Avenir Next", Helvetica, sans-serif;
-  font-size: 3em;
-  font-weight: 500;
-  margin-bottom: 0em;
+body {
+  min-width: 260px;
+  max-width: 800px;
+  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
+  font-weight: 200;
+  color: #ddd;
+  background: black;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-.subtitle {
-  font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-weight: 500;
-  margin-bottom: 0.5em;
-  color: #fff;
+header {
+  margin-bottom: 3.5%;
+  clear: both;
 }
 
-.date {
-  font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.75em;
-  font-weight: 600;
-  color: #fff;
-}
-
-.descr {
-  font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.5em;
-  font-weight: 300;
-  color: #fff;
-}
-
-.minor {
+footer {
+  border-top: 1px solid #ddd;
+  font-size: 1em;
   color: #999;
-  font-weight: 300;
-}
-
-.heading {
-  font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-weight: 600;
-  margin-top: 0.5em;
-  color: #fff;
-}
-
-.doit {
-  margin-top: 1em;
-  font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.5em;
-  font-weight: 500;
-  font-style: italic;
-  color: #00C853;
-}
-
-#container {
-  text-align: left;
-  width: fit-content;
-  max-width: fit-content;
-  padding: 2em;
-}
-
-#logo {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  width: 32em;
-  max-width: 100%;
-}
-
-#footer {
-  box-sizing: border-box;
   text-align: right;
-  width: 100%;
-  padding: 1em;
+  margin-top: 20px;
 }
 
-em {
-  font-weight: 600;
+footer p {}
+
+footer p a,
+footer p a:link,
+footer p a:active {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+}
+
+nav a,
+nav a:link,
+nav a:active {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #888;
+}
+
+nav a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 1.4em;
+  margin-bottom: 0.1em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 0.6em;
+  font-size: 1.2em;
 }
 
 ul {
   margin: 0;
-  padding-inline-start: 1em;
-}
-
-li {
-  font-size: 1.2em;
+  padding-inline-start: 1.5em;
+  text-indent: -0.5em;
 }
 
 li::marker {
-  content: none; 
+  content: none;
 }
 
-a {
-  display: block;
+p {
+  margin: 0.2em 0;
+}
+
+em {
+  font-style: normal;
+  font-weight: 400;
+}
+
+a,
+a:link,
+a:active {
+  font-weight: 400;
+  text-decoration: underline;
   color: #fff;
-  font-size: 1.5em;
-  text-decoration: none;
 }
 
-a::before {
-  content: "→ ";
+a:hover {
+  color: #ccc;
+}
+
+#main {}
+
+#poster {
+  padding: 3.5% 5%;
+}
+
+#subtitle {
+  margin-bottom: 2.5vw;
+  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-size: 3.8vw;
+  font-weight: 300;
+  text-align: center;
+}
+
+#reservoir-bg {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 30%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 4% 3%;
+}
+
+#reservoir {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#year {
+  display: block;
+  margin-left: auto;
+  margin-right: 3%;
+  margin-top: 5%;
+  width: 47%;
+}
+
+#talsperre {
+  position: relative;
+  left: -8.5%;
+  display: block;
+  margin-top: -3%;
+  width: 117%;
+}
+
+#date {
+  position: relative;
+  left: 1%;
+  display: block;
+  margin-right: auto;
+  margin-top: -3%;
+  width: 48%;
+}
+
+#location {
+  position: relative;
+  left: 1%;
+  margin-top: 3%;
+  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-size: 4.2vw;
+  font-weight: 300;
+}
+
+#credits {
+  margin: 0em 0em 1em 0em;
+  color: #000;
+  background-color: #fff;
+  font-weight: 200;
+}
+
+#credits em {
+  font-weight: 300;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+  margin: 0em 0em 4em 0em;
+  background-color: black;
+  font-size: 1.2em;
+}
+
+.framed {
+  border-style: solid;
+  border-color: #aaa;
+  border-width: 3px;
+  border-radius: 15px;
+}
+
+.description {
+  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+.work {
+  font-weight: 400;
+}
+
+.artist {
+  font-weight: 400;
+}
+
+.aux {
+  font-weight: 200;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2em;
+}
+
+.logo {
+  height: 7.7vw;
+  margin: 2% 5%;
+}
+
+.logo.smaller {
+  height: 7vw;
+}
+
+.logo.bigger {
+  height: 9vw;
+}
+
+/* hightlighted text: 
+	- Safari >=1.1, Opera >=9.5, IE9
+	- Firefox >=1 */
+::selection {
+  background: #aaa;
+}
+
+::-moz-selection {
+  background: #aaa;
+}
+
+@media (min-width: 840px) {
+  #subtitle {
+    font-size: 32px;
+  }
+
+  #location {
+    font-size: 35.5px;
+  }
+
+  #logo-container {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    height: 65px;
+  }  
+
+  .logo.smaller {
+    height: 59px;
+  }
+
+  .logo.bigger {
+    height: 75px;
+  }
+
+}
+
+@media (max-width: 720px) {
+  body {}
+
+  header {
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    font-size: 0.8em;
+  }
+
+  #main {}
+
+  .container {
+    padding: 10px;
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  .logo-container {
+    justify-content: center;
+  }
+
+  .logo {
+    height: 55px;
+    margin: 13px 32.7px;
+  }
+
+  .logo.smaller {
+    height: 50.5px;
+  }
+
+  .logo.bigger {
+    height: 64.6px;
+  }
+
+  .artists {}
+}
+
+/*from https://codepen.io/hexagoncircle/pen/Exyewjv*/
+body {
+  --s: 25vmin;
+  --p: calc(var(--s) / 2);
+  --c1: #000;
+  --c2: #222;
+  --c3: #111;
+  --bg: var(--c3);
+  --d: 10000ms;
+  --e: cubic-bezier(0.76, 0, 0.24, 1);
+
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+  background-size: var(--s) var(--s);
+  background-position:
+    calc(var(--p) * 1) calc(var(--p) * 0),
+    calc(var(--p) * -1) calc(var(--p) * 1),
+    calc(var(--p) * 1) calc(var(--p) * -1),
+    calc(var(--p) * -1) calc(var(--p) * 0);
+  animation:
+    color var(--d) var(--e) infinite,
+    position var(--d) var(--e) infinite;
+}
+
+@keyframes color {
+  0%, 25% {
+    --bg: var(--c3);
+  }
+
+  26%, 50% {
+    --bg: var(--c1);
+  }
+
+  51%, 75% {
+    --bg: var(--c3);
+  }
+
+  76%, 100% {
+    --bg: var(--c2);
+  }
+}
+
+@keyframes position {
+  0% {
+    background-position:
+      calc(var(--p) * 1) calc(var(--p) * 0),
+      calc(var(--p) * -1) calc(var(--p) * 1),
+      calc(var(--p) * 1) calc(var(--p) * -1),
+      calc(var(--p) * -1) calc(var(--p) * 0);
+  }
+
+  25% {
+    background-position:
+      calc(var(--p) * 1) calc(var(--p) * 4),
+      calc(var(--p) * -1) calc(var(--p) * 5),
+      calc(var(--p) * 1) calc(var(--p) * 3),
+      calc(var(--p) * -1) calc(var(--p) * 4);
+  }
+
+  50% {
+    background-position:
+      calc(var(--p) * 3) calc(var(--p) * 8),
+      calc(var(--p) * -3) calc(var(--p) * 9),
+      calc(var(--p) * 2) calc(var(--p) * 7),
+      calc(var(--p) * -2) calc(var(--p) * 8);
+  }
+
+  75% {
+    background-position:
+      calc(var(--p) * 3) calc(var(--p) * 12),
+      calc(var(--p) * -3) calc(var(--p) * 13),
+      calc(var(--p) * 2) calc(var(--p) * 11),
+      calc(var(--p) * -2) calc(var(--p) * 12);
+  }
+
+  100% {
+    background-position:
+      calc(var(--p) * 5) calc(var(--p) * 16),
+      calc(var(--p) * -5) calc(var(--p) * 17),
+      calc(var(--p) * 5) calc(var(--p) * 15),
+      calc(var(--p) * -5) calc(var(--p) * 16);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  body {
+    animation: none;
+  }
 }
