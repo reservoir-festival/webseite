@@ -174,7 +174,7 @@ a:hover {
   display: block;
   margin-right: auto;
   margin-top: -3%;
-  width: 48%;
+  width: 50%;
 }
 
 #location {
@@ -184,6 +184,16 @@ a:hover {
   font-family: "Avenir Next", Helvetica, sans-serif;
   font-size: 4.2vw;
   font-weight: 300;
+}
+
+#info p {
+  margin-top: 0.5em;
+  font-family: "Avenir Next", Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+#info p em {
+  font-weight: 500;
 }
 
 #credits {
@@ -219,11 +229,6 @@ a:hover {
 
 .container.margin {
   margin-bottom: 4em;
-}
-
-.description {
-  font-family: "Avenir Next", Helvetica, sans-serif;
-  font-size: 1.1em;
 }
 
 .work {
