@@ -20,6 +20,7 @@ body {
   background: black;
   padding: 20px;
   margin: 0 auto;
+  hyphens: auto;
 }
 
 header {
@@ -31,7 +32,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   list-style-type: none;
-  font-size: 2em;
+  font-size: 3.8vw;
   font-weight: 400;
   text-align: center;
 }
@@ -236,9 +237,112 @@ a:hover {
   font-weight: 400;
 }
 
-.artist {
+.artist-descr {
+  position: relative;
+  margin-top: 3em;
   font-family: "Avenir Next Condensed", Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.artist-descr.hidden {
+  display: none;
+}
+
+.artist-name {
+  position: absolute;
+  top: -1.4em;
+  width: fit-content;
+  clear: both;
+  min-width: 25%;
+  text-align: center;
+  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
+  font-size: 1.2em;
   font-weight: 400;
+}
+
+.artist-name.left {
+  left: 0;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+
+.artist-name.right {
+  right: 0;
+}
+
+.artist-portrait {
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+  /* filter: grayscale(1); */
+  shape-outside: circle();
+}
+
+.artist-portrait.left {
+  float: left;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.artist-portrait.right {
+  float: right;
+  margin: 1rem 0 1rem 1em;
+}
+
+.work-descr {
+  position: relative;
+  min-height: 420px;
+  margin-top: 2em;
+  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.work-descr.hidden {
+  display: none;
+}
+
+.work-title {
+  min-width: 200px;
+  clear: both;
+  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.work-title.left,
+.work-subtitle.left {
+  text-align: left;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+
+.work-title.right,
+.work-subtitle.right {
+  text-align: right;
+}
+
+.work-subtitle {
+  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.work-image {
+  width: 45%;
+  border-radius: 50%;
+  height: auto;
+  /* filter: grayscale(1); */
+  shape-outside: circle();
+}
+
+.work-image.left {
+  float: left;
+  margin: 1em 1em 1em 0;
+}
+
+.work-image.right {
+  float: right;
+  margin: 1rem 0 1rem 1em;
 }
 
 .aux {
@@ -297,6 +401,10 @@ a:hover {
     flex-wrap: wrap;
   }
 
+  nav {
+    font-size: 32px;
+  }
+
   .logo {
     height: 65px;
   }
@@ -352,12 +460,19 @@ a:hover {
     height: 64.6px;
   }
 
-  .artists {}
+  .artist-portrait {
+    width: 150px;
+  }
+
+  .work-image {
+    width: 250px;
+  }
 }
 
 @media (max-width: 500px) {
   nav {
     flex-direction: column;
+    font-size: 24px;
   }
 }
 
