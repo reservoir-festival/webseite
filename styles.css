@@ -240,6 +240,7 @@ a:hover {
 .artist-descr {
   position: relative;
   margin-top: 3em;
+  min-height: 200px;
   font-family: "Avenir Next Condensed", Helvetica, sans-serif;
   text-align: justify;
 }
