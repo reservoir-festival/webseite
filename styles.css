@@ -18,13 +18,13 @@ body {
   font-weight: 200;
   color: #ddd;
   background: black;
-  padding: 20px;
+  padding: 1% 20px;
   margin: 0 auto;
   hyphens: auto;
 }
 
 header {
-  margin-bottom: 3.5%;
+  margin-bottom: 0.5%;
 }
 
 nav {
@@ -32,9 +32,10 @@ nav {
   flex-direction: row;
   justify-content: center;
   list-style-type: none;
-  font-size: 3.8vw;
+  font-size: 3.35vw;
   font-weight: 400;
   text-align: center;
+  color: #aaa;
 }
 
 nav a,
@@ -44,13 +45,12 @@ nav a:active {
   margin: 0 0.5em;
   text-transform: uppercase;
   text-decoration: none;
-  color: inherit;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 nav a:hover {
   border-color: #fff;
-  opacity: 1;
+  opacity: 0.333;
 }
 
 footer {
@@ -126,12 +126,12 @@ a:hover {
 }
 
 #poster {
-  padding: 3.5% 5%;
+  padding: 2% 5%;
 }
 
 #subtitle {
-  margin-bottom: 0.8em;
-  font-size: 3.8vw;
+  margin-bottom: 0.6em;
+  font-size: 3.1vw;
   font-weight: 300;
   text-align: center;
 }
@@ -143,7 +143,7 @@ a:hover {
   height: 30%;
   background-color: #fff;
   border-radius: 15px;
-  padding: 4% 3%;
+  padding: 2.1% 10%;
 }
 
 #reservoir {
@@ -155,16 +155,16 @@ a:hover {
 #year {
   display: block;
   margin-left: auto;
-  margin-right: 3%;
-  margin-top: 5%;
-  width: 47%;
+  margin-right: 2%;
+  margin-top: 4%;
+  width: 38%;
 }
 
 #talsperre {
   position: relative;
   left: -8.5%;
   display: block;
-  margin-top: -3%;
+  margin-top: -5%;
   width: 117%;
   animation-duration: 20s;
   animation-name: poster-animation;
@@ -201,15 +201,15 @@ a:hover {
   left: 1%;
   display: block;
   margin-right: auto;
-  margin-top: -3%;
-  width: 50%;
+  margin-top: -4%;
+  width: 37%;
 }
 
 #location {
   position: relative;
   left: 1%;
-  margin-top: 3%;
-  font-size: 4.2vw;
+  margin: 1.5% 0 0.1% 0;
+  font-size: 3.2vw;
   font-weight: 300;
 }
 
@@ -252,7 +252,7 @@ a:hover {
 
 .container.framed {
   border-style: solid;
-  border-color: #aaa;
+  border-color: #fff;
   border-width: 3px;
   border-radius: 15px;
 }
@@ -419,11 +419,11 @@ a:hover {
 
 @media (min-width: 840px) {
   #subtitle {
-    font-size: 32px;
+    font-size: 27px;
   }
 
   #location {
-    font-size: 35.5px;
+    font-size: 32px;
   }
 
   #logo-container {
@@ -431,7 +431,7 @@ a:hover {
   }
 
   nav {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .logo {
@@ -498,7 +498,7 @@ a:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   nav {
     flex-direction: column;
     font-size: 24px;
@@ -507,11 +507,15 @@ a:hover {
 
 @media (max-width: 360px) {
   #subtitle {
-    font-size: 13.7px;
+    font-size: 10.3px;
   }
 
   #talsperre {
     font-size: 15.1px;
+  }
+
+  #location {
+    font-size: 11.2px;
   }
 }
 
@@ -522,6 +526,9 @@ body {
   --c1: #000;
   --c2: #222;
   --c3: #111;
+  /* --c1: #4deeea;
+  --c2: #74ee15;
+  --c3: #ffe700; */
   --bg: var(--c3);
   --d: 10000ms;
   --e: cubic-bezier(0.76, 0, 0.24, 1);
