@@ -14,7 +14,7 @@ html {
 body {
   min-width: 320px;
   max-width: 800px;
-  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
+  font-family: "Avenir Next", Helvetica, sans-serif;
   font-weight: 200;
   color: #ddd;
   background: black;
@@ -31,7 +31,6 @@ nav {
   flex-direction: row;
   justify-content: center;
   list-style-type: none;
-  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
   font-size: 2em;
   font-weight: 400;
   text-align: center;
@@ -74,6 +73,7 @@ footer a:active {
 }
 
 h1, h2, h3, h4 {
+  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
   font-weight: 500;
 }
 
@@ -130,7 +130,6 @@ a:hover {
 
 #subtitle {
   margin-bottom: 0.8em;
-  font-family: "Avenir Next", Helvetica, sans-serif;
   font-size: 3.8vw;
   font-weight: 300;
   text-align: center;
@@ -181,14 +180,12 @@ a:hover {
   position: relative;
   left: 1%;
   margin-top: 3%;
-  font-family: "Avenir Next", Helvetica, sans-serif;
   font-size: 4.2vw;
   font-weight: 300;
 }
 
 #info p {
   margin-top: 0.5em;
-  font-family: "Avenir Next", Helvetica, sans-serif;
   font-size: 1em;
 }
 
@@ -210,6 +207,10 @@ a:hover {
 #credits a:link,
 #credits a:active {
   text-decoration: none;
+}
+
+.condensed {
+  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
 }
 
 .container {
@@ -236,6 +237,7 @@ a:hover {
 }
 
 .artist {
+  font-family: "Avenir Next Condensed", Helvetica, sans-serif;
   font-weight: 400;
 }
 

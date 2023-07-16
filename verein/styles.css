@@ -1,13 +1,18 @@
 body {
-  width: 80%;
-  height: 100%;
+  box-sizing: border-box;
+  width: 100%;
   max-width: 800px;
+  margin: 0;
   padding: 2% 3%;
   background-color: #333;
   color: #fff;
   font-family: "Avenir Next Condensed", Helvetica, sans-serif;
   font-size: 1.2em;
   font-weight: 200;
+}
+
+section {
+  width: 100%;
 }
 
 footer {
@@ -48,7 +53,7 @@ em {
 }
 
 #logo {
-  width: 50%;
+  width: 400px;
   max-width: 600px;
   margin-top: 2em;
 }
