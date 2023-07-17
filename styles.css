@@ -96,16 +96,6 @@ h3 {
   font-size: 1em;
 }
 
-ul {
-  margin: 0;
-  padding-inline-start: 1.5em;
-  text-indent: -0.5em;
-}
-
-li::marker {
-  content: none;
-}
-
 p {
   margin: 0.2em 0;
 }
@@ -125,6 +115,11 @@ a:active {
 
 a:hover {
   opacity: 0.5;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 2em;
 }
 
 #poster {
@@ -174,6 +169,24 @@ a:hover {
   animation-direction: alternate;
   animation-timing-function: linear;
   animation-direction: normal;
+}
+
+#program ul {
+  margin: 0;
+  list-style-type: none;
+  list-style: none;
+  list-style-position: outside;
+  list-style-image: none;
+  padding-inline-start: 1.5em;
+  text-indent: -0.5em;
+}
+
+#program ul li::marker {
+  content: "";
+}
+
+#program ul li::before {
+  content: "";
 }
 
 @keyframes poster-animation {
