@@ -21,6 +21,7 @@ body {
   padding: 1% 20px;
   margin: 0 auto;
   hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 header {
