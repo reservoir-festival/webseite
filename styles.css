@@ -73,6 +73,7 @@ footer a:link,
 footer a:active {
   margin: 2px 5px;
   text-decoration: none;
+  font-size: 1.1em;
 }
 
 h1, h2, h3, h4 {
@@ -334,7 +335,7 @@ ul {
 
 .work-descr {
   position: relative;
-  min-height: 420px;
+  min-height: 300px;
   margin-top: 2em;
   font-family: "Avenir Next Condensed", Helvetica, sans-serif;
   text-align: justify;
@@ -387,6 +388,10 @@ ul {
 .work-image.right {
   float: right;
   margin: 1rem 0 1rem 1em;
+}
+
+.work-image.smaller {
+  width: 200px;
 }
 
 .aux {
@@ -507,10 +512,6 @@ ul {
   .artist-portrait {
     width: 150px;
   }
-
-  /* .work-image {
-    width: 250px;
-  } */
 }
 
 @media (max-width: 560px) {
