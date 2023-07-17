@@ -35,7 +35,8 @@ nav {
   font-size: 3.35vw;
   font-weight: 400;
   text-align: center;
-  color: #aaa;
+  /* color: #aaa; */
+  color: #000;
 }
 
 nav a,
@@ -493,9 +494,9 @@ a:hover {
     width: 150px;
   }
 
-  .work-image {
+  /* .work-image {
     width: 250px;
-  }
+  } */
 }
 
 @media (max-width: 560px) {
@@ -517,9 +518,13 @@ a:hover {
   #location {
     font-size: 11.2px;
   }
+
+  .work-image {
+    width: 150px;
+  }
 }
 
-/*from https://codepen.io/hexagoncircle/pen/Exyewjv*/
+/* animated background (https://codepen.io/hexagoncircle/pen/Exyewjv) */
 body {
   --s: 25vmin;
   --p: calc(var(--s) / 2);
