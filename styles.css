@@ -242,7 +242,7 @@ ul {
 
 .sm-icon {
   width: 40px;
-  padding: 10px;
+  padding: 10px 7px;
   filter: grayscale(01);
   opacity: 0.8;
 }
@@ -570,8 +570,8 @@ ul.address,
   }
 
   .sm-icon {
-    width: 30px;
-    padding: 8px;
+    width: 40px;
+    padding: 10px 7px;
   }    
 }
 
