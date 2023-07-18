@@ -566,8 +566,13 @@ ul.address,
 @media (max-width: 560px) {
   nav {
     font-size: 21.2px;
-    margin-top: -63px;
+    margin-top: -66px;
   }
+
+  .sm-icon {
+    width: 30px;
+    padding: 8px;
+  }    
 }
 
 @media (max-width: 360px) {
