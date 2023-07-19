@@ -243,7 +243,7 @@ ul {
   position: relative;
 }
 
-#tickets-button a {
+#tickets-link {
   padding: 0 5px;
   margin: 0 0.1em;
   border-style: solid;
@@ -252,21 +252,29 @@ ul {
   text-decoration: none;
 }
 
-#tickets-button a:hover {
+#tickets-link:hover {
   opacity: 1;
   color: black;
   background-color: white;
+}
+
+#tickets-button a:hover {
+  opacity: 1;
 }
 
 #tickets-arrow {
   position: absolute;
   left: 25px;
   top: -84px;
-  transform: rotate(-45deg);
+  transform: rotate(-70deg);
   animation-name: spin;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   width: 120px;
+}
+
+#tickets-arrow:hover {
+  filter: contrast(200%);
 }
 
 @keyframes spin {
@@ -279,7 +287,7 @@ ul {
   }
 
   100% {
-    transform: rotate(-765deg);
+    transform: rotate(675deg);
   }
 }
 
@@ -380,10 +388,6 @@ ul.address,
   margin-bottom: 4em;
 }
 
-.work {
-  font-weight: 400;
-}
-
 .artist-descr {
   position: relative;
   margin-top: 3em;
@@ -394,6 +398,10 @@ ul.address,
 
 .artist-descr.hidden {
   display: none;
+}
+
+.container .artist-descr:first-of-type {
+  margin-top: 2.2em;
 }
 
 .artist-name {
@@ -436,16 +444,30 @@ ul.address,
   margin: 1rem 0 1rem 1em;
 }
 
+a.artist-url {
+  margin-top: 0;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a.artist-url:before {
+  content: "→ ";
+}
+
 .work-descr {
   position: relative;
   min-height: 300px;
-  margin-top: 1em;
+  margin-top: 1.5em;
   font-family: "Avenir Next Condensed", Helvetica, sans-serif;
   text-align: justify;
 }
 
 .work-descr.hidden {
   display: none;
+}
+
+.container .work-descr:first-of-type {
+  margin-top: 0.5em;
 }
 
 .work-title {
