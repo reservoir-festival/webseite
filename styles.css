@@ -239,6 +239,50 @@ ul {
   flex-direction: row;
 }
 
+#tickets-button {
+  position: relative;
+}
+
+#tickets-button a {
+  padding: 0 5px;
+  margin: 0 0.1em;
+  border-style: solid;
+  border-radius: 0.4em;
+  border-width: 2px;
+  text-decoration: none;
+}
+
+#tickets-button a:hover {
+  opacity: 1;
+  color: black;
+  background-color: white;
+}
+
+#tickets-arrow {
+  position: absolute;
+  left: 25px;
+  top: -84px;
+  transform: rotate(-45deg);
+  animation-name: spin;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  width: 120px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  98% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(-765deg);
+  }
+}
+
 .sm-icon {
   width: 40px;
   padding: 10px 7px;
