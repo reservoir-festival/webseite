@@ -121,6 +121,11 @@ ul {
   padding-left: 2em;
 }
 
+span.work {
+  font-style: normal;
+  font-weight: 400;  
+}
+
 #poster {
   position: relative;
   padding: 0;
