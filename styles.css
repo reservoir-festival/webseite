@@ -524,6 +524,10 @@ a.artist-url:before {
   width: 200px;
 }
 
+.work-image.no-margin {
+  margin: 0;
+}
+
 .aux {
   font-size: 0.9em;
   font-weight: 200;
