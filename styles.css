@@ -551,6 +551,10 @@ a.artist-url:before {
   font-weight: 200;
 }
 
+.aux.break {
+  display: inline;
+}
+
 .logo-container {
   position: relative;
   display: flex;
@@ -671,7 +675,11 @@ a.artist-url:before {
   .sm-icon {
     width: 40px;
     padding: 10px 7px;
-  }    
+  }
+
+  .aux.break {
+    display: block;
+  }  
 }
 
 @media (max-width: 360px) {
