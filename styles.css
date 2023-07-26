@@ -679,7 +679,11 @@ a.artist-url:before {
 
   .aux.break {
     display: block;
-  }  
+  }
+
+  span.optional {  
+    display: none;
+  }
 }
 
 @media (max-width: 360px) {
