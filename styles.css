@@ -408,7 +408,7 @@ ul.address,
 
 
 .container.margin {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 .artist-descr {
@@ -581,12 +581,20 @@ a.artist-url:before {
   height: 7.7vw;
 }
 
+.logo.small {
+  height: 4vw;
+}
+
 .logo.smaller {
   height: 7vw;
 }
 
 .logo.bigger {
   height: 9vw;
+}
+
+.logo.big {
+  height: 10vw;
 }
 
 /* hightlighted text: 
