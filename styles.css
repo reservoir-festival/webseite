@@ -630,6 +630,10 @@ a.artist-url:before {
     height: 65px;
   }
 
+  .logo.small {
+    height: 33.8px;
+  }
+  
   .logo.smaller {
     height: 59px;
   }
@@ -638,6 +642,9 @@ a.artist-url:before {
     height: 75px;
   }
 
+  .logo.big {
+    height: 84.4px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -661,12 +668,20 @@ a.artist-url:before {
     height: 55px;
   }
 
+  .logo.small {
+    height: 28.6px;
+  }
+  
   .logo.smaller {
     height: 50.5px;
   }
 
   .logo.bigger {
     height: 64.6px;
+  }
+
+  .logo.big {
+    height:71.4px;
   }
 
   .artist-portrait {
